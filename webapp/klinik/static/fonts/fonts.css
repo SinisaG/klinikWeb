@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Frutiger Regular';
+    src: url('JKFruRom.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fruitger Light';
+    src: url('JKFruLig.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Fruitger Bold';
+    src: url('JKFruBol.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}

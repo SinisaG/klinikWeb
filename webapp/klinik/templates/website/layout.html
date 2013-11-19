@@ -1,0 +1,25 @@
+<%inherit file="../base.html"/>
+
+<%def name="seo_tags()">
+  <!-- OPEN GRAPH -->
+
+</%def>
+<%def name="layout_scripts()">
+    <script src="${STATIC_URL}scripts/libs.js?${VERSION_TOKEN}"></script>
+</%def>
+
+<%def name="footer_classes()">mar-top-2</%def>
+
+<div id="global-frame" class="${self.page_class()}">
+    <%block name="header">
+    </%block>
+    ${self.header_messages(request.session.pop_flash("generic_messages"))}
+    <%block name="contentwrapper">
+      <div class="page-wrapper">
+        ${self.content()}
+      </div>
+    </%block>
+    <%block name="footer">
+
+    </%block>
+</div>
