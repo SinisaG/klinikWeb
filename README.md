@@ -26,4 +26,4 @@ klinikWeb
 	That should set up the env.
 	We choose a domain for the project. And run pythonpathc\fab.exe -H host -u azureuser -i user_privete_key_path add_nginx_domain_config
 	This will prompt for basic setup.
-	The last thing to do is to setup hudson. Copy existing job and set the hook in github to trigger the build. 
+	The last thing to do is to setup hudson. Copy existing job and set the hook in github to trigger the build.

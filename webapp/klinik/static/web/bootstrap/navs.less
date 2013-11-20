@@ -11,19 +11,22 @@
   padding-left: 0; // Override default ul/ol
   list-style: none;
   .clearfix();
-
+  padding-top:25px;
   > li {
     position: relative;
     display: block;
 
     > a {
+      @color:#005EB8;
       position: relative;
       display: block;
       padding: @nav-link-padding;
+      color:@color ;
+
       &:hover,
       &:focus {
         text-decoration: none;
-        background-color: @nav-link-hover-bg;
+        color:darken(@color, 10%)
       }
     }
 
