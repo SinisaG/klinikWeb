@@ -132,10 +132,10 @@ def switch(env, version):
 
     if CLEAN_SESSIONS:
         result = run("redis-cli flushall")
-
+    with cd(code_path):
+        run("{}/env/bin/python setup.py develop".format(environment_path))
     with cd(environment_path):
         run("cp {}{}.ini {}code".format(code_path, env, environment_path))
-        run("env/bin/python {}setup.py develop".format(code_path))
         with cd("code"):
             run("rm current;ln -s {} current".format(version))
         for pg in ENVIRONMENTS[env].process_groups:

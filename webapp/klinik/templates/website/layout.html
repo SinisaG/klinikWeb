@@ -12,6 +12,20 @@
 
 <div id="global-frame" class="${self.page_class()}">
     <%block name="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-inner">
+			            <a class="navbar-brand" href="#"><img src="static/img/logo_wetwarez.png?${VERSION_TOKEN}"/> </a>
+                        <ul class="nav navbar-right">
+                             <li> <a href="#">Who are we?</a></li>
+                             <li><a href="#">|</a></li>
+                             <li><a href="#">How it works?</a></li>
+                             <li><a href="#">|</a></li>
+                             <li><a href="#">Contact us</a></li>
+                        </ul>
+			     </div>
+            </nav>
+    </div>
     </%block>
     ${self.header_messages(request.session.pop_flash("generic_messages"))}
     <%block name="contentwrapper">
