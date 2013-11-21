@@ -12,32 +12,34 @@
 
 <div id="global-frame" class="${self.page_class()}">
     <%block name="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-default" role="navigation">
-                  <a class="navbar-brand" href="#">
-                      <img src="/static/img/logo.svg" alt="${g.project_name}" class="brand-image"/>
-                      <div class="brand-text">
-                            <div class="brand-text-title">
-                                Tagesklinik am Friesenplatz
-                            </div>
-                            <div class="brand-text-subtitle">
-                                Teilstationäre Klinik für Psychiatrie und Psychotherapie <br> mit Ambulanz und Sachverständigungbüro
-                            </div>
-                      </div>
-                  </a>
-                  <ul class="nav nav-pills pull-right">
-                      <li><a href="#" class="menu-item">Die Depression</a></li>
-                      <li><a href="#" class="menu-item">Die Klinik</a></li>
-                      <li><a href="#" class="menu-item">Die Therapien</a></li>
-                      <li><a href="#" class="menu-item">Ihr Weg zu uns</a></li>
-                      <li><a href="#" class="menu-item">Impressum</a></li>
-                    </ul>
-                </nav>
-            </div>
-       </div>
-   </div>
+    <div id="main-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-default" role="navigation">
+                      <a class="navbar-brand" href="#">
+                          <img src="/static/img/logo.svg" alt="${g.project_name}" class="brand-image"/>
+                          <div class="brand-text">
+                                <div class="brand-text-title">
+                                    Tagesklinik am Friesenplatz
+                                </div>
+                                <div class="brand-text-subtitle">
+                                    Teilstationäre Klinik für Psychiatrie und Psychotherapie <br> mit Ambulanz und Sachverständigungbüro
+                                </div>
+                          </div>
+                      </a>
+                      <ul class="nav nav-pills pull-right">
+                          <li><a href="#" class="menu-item">Die Depression</a></li>
+                          <li><a href="#" class="menu-item">Die Klinik</a></li>
+                          <li><a href="#" class="menu-item">Die Therapien</a></li>
+                          <li><a href="#" class="menu-item">Ihr Weg zu uns</a></li>
+                          <li><a href="#" class="menu-item">Impressum</a></li>
+                        </ul>
+                    </nav>
+                </div>
+           </div>
+     </div>
+    </div>
     </%block>
     ${self.header_messages(request.session.pop_flash("generic_messages"))}
     <%block name="contentwrapper">
