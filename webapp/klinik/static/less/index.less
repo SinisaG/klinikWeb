@@ -17,6 +17,7 @@
   font-size: 60px;
   color:@blue4;
   margin-bottom:60px;
+  line-height:60px;
 }
 
 .site-text{
@@ -43,6 +44,78 @@
   }
 
 
+.section-clinic{
+  .background-image('../img/clinic.jpg');
+  padding-top:420px;
+  padding-bottom:190px;
+}
+
+.blur-holder{
+
+  background-color: rgba(255,255,255,0.7);
+ width:100%;
+}
+
+.icon{
+  float:left;
+  margin-right:10px;
+  cursor: pointer;
+}
+
+.icon-text{
+
+  font-size: 20px;
+  line-height:20px;
+  padding-top:15px;
+  color:@blue1;
+  cursor: pointer;
+}
+
+
+.doctor-1-pic{
+  border-radius: 50%;
+  width:91%;
+}
+
+.doctor-2-pic{
+  border-radius: 50%;
+  width:80%;
+}
+
+.doctor-3-pic{
+  border-radius: 50%;
+  width:84%;
+}
+
+.name-text{
+  font-size: 36px;
+  color:@blue1;
+  margin-bottom: 30px;
+}
+
+.function-text{
+
+  font-family: 'Fruitger Bold';
+  font-size: 24px;
+  line-height: 46px;
+  margin-left:16%;
+  color:@gray-black
+}
+
+.doctor-description{
+  font-size: 16px;
+  line-height: 20px;
+  margin-left:16%;
+  color:@gray-black;
+  width:60%;
+}
+
+.doctor-description-extend{
+  font-size: 16px;
+  line-height: 20px;
+  margin-left:16%;
+  color:@gray-black;
+}
 
 /*********************/
 
@@ -86,6 +159,14 @@
     padding-top: 95px;
   }
 
+  #left-hand{
+  margin-top:-230px;
+
+  }
+    #right-hand{
+  margin-top:-340px;
+
+  }
 }
 
 @media (min-width: @screen-lg-min) {
@@ -106,10 +187,19 @@
     padding-left: 65px;
     padding-top: 95px;
   }
-}
 
-.section-clinic{
-  .background-image('../img/clinic.jpg');
-  padding-top:420px;
-  background-color:@section-color;
+  #left-hand{
+  margin-top:-230px;
+
+  }
+
+  #right-hand{
+  margin-top:-340px;
+
+  }
+
+  .super-extention{
+
+    margin-right:-70px;
+  }
 }
