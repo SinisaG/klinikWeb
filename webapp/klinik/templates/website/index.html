@@ -4,7 +4,12 @@
 <%def name="content()">
 
 
-        <div class="cover-image" data-top="background-position:0px -150px" data-bottom="background-position:0px 0px">
+        <div class="cover-image position-relative" data-0="background-position:0px 0px; height:1000px;" data-1000="background-position:0px -200px; height:400px;">
+                    <div id= "first-circle" class="circle-text" data-0="bottom:-50px;"  data-1000="bottom:800px;">
+                            Schwerpunkte<br>
+                            Depression, Angst<br>
+                            und Zwang
+                    </div>
         </div>
 
         <div class="gray-background">
@@ -27,11 +32,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 margin-top-100">
-                        <img src="/static/img/depression.jpg" class="cover-image">
+                    <div class="col-md-12 margin-top-100  margin-bottom-200">
+                        <img src="/static/img/depression.jpg" class="full-size">
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="section-clinic">
+
+
+
         </div>
 
 </%def>
@@ -40,6 +51,13 @@
 <%def name="post_scripts()">
 <script>
 
-var s = skrollr.init();
+var s = skrollr.init({
+    smoothScrolling:true
+});
+$('#first-circle').css("left", parseInt($('.container').css("margin-left")));
+//first circle alligned with logo
+$(window).resize(function() {
+    $('#first-circle').css("left", parseInt($('.container').css("margin-left")));
+});
 </script>
 </%def>

@@ -6,6 +6,12 @@
   background-color:@section-color;
 }
 
+  .cover-image{
+    width:100%;
+    .background-image('../img/freedom.jpg');
+    background-repeat: no-repeat;
+  }
+
 .main-heading{
   font-family: "Fruitger Light";
   font-size: 60px;
@@ -15,28 +21,95 @@
 
 .site-text{
   font-family: 'Fruitger light';
-  font-size: 20px;
+  font-size: 22px;
   line-height: 30px;
   color:@gray-black;
 }
+
+.circle-text{
+    font-family: 'Fruitger light';
+    color:white;
+    font-size: 18px;
+    line-height: 24px;
+    background-color:@blue4;
+    position:absolute;
+    left:300px;
+    border-radius: 50%;
+    border:1px solid white;
+    width:200px;
+    height:200px;
+    padding-left: 64px;
+    padding-top: 65px;
+  }
+
+
 
 /*********************/
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
 
+    .circle-text{
+    font-family: 'Fruitger light';
+    color:white;
+    font-size: 20px;
+    line-height: 32px;
+    background-color:@blue4;
+    position:absolute;
+    left:300px;
+    border-radius: 50%;
+    border:1px solid white;
+    width:250px;
+    height:250px;
+    padding-left: 65px;
+    padding-top: 95px;
+  }
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
 
+  .circle-text{
+    font-family: 'Fruitger light';
+    color:white;
+    font-size: 28px;
+    line-height: 40px;
+    background-color:@blue4;
+    position:absolute;
+    left:300px;
+    border-radius: 50%;
+    border:1px solid white;
+    width:300px;
+    height:300px;
+    padding-left: 65px;
+    padding-top: 95px;
+  }
+
 }
 
 @media (min-width: @screen-lg-min) {
-  .cover-image{
-    width:100%;
-    .background-image('../img/freedom.jpg');
-    height:900px;
-    background-repeat: no-repeat;
+
+
+  .circle-text{
+    font-family: 'Fruitger light';
+    color:white;
+    font-size: 36px;
+    line-height: 48px;
+    background-color:@blue4;
+    position:absolute;
+    left:300px;
+    border-radius: 50%;
+    border:1px solid white;
+    width:350px;
+    height:350px;
+    padding-left: 65px;
+    padding-top: 95px;
   }
+}
+
+.section-clinic{
+  .background-image('../img/clinic.jpg');
+  padding-top:420px;
+  background-color:@section-color;
 }
