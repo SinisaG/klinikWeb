@@ -415,7 +415,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/GPL-license.txt
                                         offsetLeft,
                                         offsetTop,
                                         parentOffsetLeft = 0,
-                                        parentOffsetTop = 0,
+                                        parentOffsetTop = 125,
                                         tempParentOffsetLeft = 0,
                                         tempParentOffsetTop = 0;
 
