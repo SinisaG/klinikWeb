@@ -4,7 +4,7 @@
 <%def name="content()">
 
 
-        <div class="cover-image position-relative" data-0="background-position:75% 0px; height:1000px;" data-1000="background-position:75% -200px; height:400px;">
+        <div class="cover-image position-relative" data-top="background-position:75% 0px; height:1000px;" data-800="background-position:75% -200px; height:400px;">
                     <div id= "first-circle" class="circle-text" data-0="bottom:-50px;"  data-1000="bottom:800px;">
                             Schwerpunkte<br>
                             Depression, Angst<br>
@@ -38,7 +38,7 @@
             </div>
         </div>
 
-        <div class="section-clinic">
+        <div class="section-clinic" data-top="background-position: 50% 0px;" data-bottom="background-position:50% -400px;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -146,9 +146,8 @@
 
 
 
-            <div class="padding-top-15"></div>
+        <div class="padding-top-15"></div>
         </div>
-
         <div class="therapy-section">
             <div class="container">
                     <div class="row">
@@ -399,9 +398,7 @@
         </div>
     </div>
 
-
      <div class="where-we-at">
-
          <div class="container">
              <div class="row">
                  <div class="col-md-12">
@@ -427,7 +424,6 @@
              <div class="row">
                  <div class="col-md-12">
                     <div id = "maps-holder">
-
                     </div>
                  </div>
              </div>
@@ -450,7 +446,7 @@ $('#maps-holder').css("height", parseInt($('.container').outerWidth()) / 2);
 
 $('#main-menu').affix({
       offset: {
-        top: 2
+        top: $('#main-menu').height()
       }
 });
 
@@ -486,9 +482,9 @@ var stylez = [
   }
   google.maps.event.addDomListener(window, 'load', initialize);
 
-/*var s = skrollr.init({
+var s = skrollr.init({
     smoothScrolling:true
-});*/
+});
 $('#first-circle').css("left", parseInt($('.container').css("margin-left")));
 //first circle alligned with logo
 $(window).resize(function() {
