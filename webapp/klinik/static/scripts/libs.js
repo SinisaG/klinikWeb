@@ -221,13 +221,13 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/GPL-license.txt
                 supportsBackgroundPositionXY = $('<div />', { style: 'background:#fff' }).css('background-position-x') !== undefined,
 
                 setBackgroundPosition = (supportsBackgroundPositionXY ?
-                        function($elem, x, y) {
+                        function($elem, "75%", y) {
                                 $elem.css({
-                                        'background-position-x': "75%",
+                                        'background-position-x': x,
                                         'background-position-y': y
                                 });
                         } :
-                        function($elem, x, y) {
+                        function($elem, "75%", y) {
                                 $elem.css('background-position', x + ' ' + y);
                         }
                 ),
