@@ -454,6 +454,13 @@
 <%def name="post_scripts()">
 <script>
 
+/*navigator.geolocation.getCurrentPosition(GetLocation);
+function GetLocation(location) {
+    alert(location.coords.latitude);
+    alert(location.coords.longitude);
+    alert(location.coords.accuracy);
+}*/
+
 $('#maps-holder').css("height", parseInt($('.container').outerWidth()) / 2);
 
 $('#main-menu').affix({
