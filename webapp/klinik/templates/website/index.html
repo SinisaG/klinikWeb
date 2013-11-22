@@ -4,8 +4,8 @@
 <%def name="content()">
 
 
-        <div class="cover-image position-relative" data-top="background-position:75% 0px; height:1000px;" data-800="background-position:75% -200px; height:400px;">
-                    <div id= "first-circle" class="circle-text" data-0="bottom:-50px;"  data-1000="bottom:800px;">
+        <div class="cover-image position-relative " data-stellar-background-ratio="0.1">
+                    <div id= "first-circle" class="circle-text" data-stellar-ratio="2.5">
                             Schwerpunkte<br>
                             Depression, Angst<br>
                             und Zwang
@@ -38,7 +38,7 @@
             </div>
         </div>
 
-        <div class="section-clinic" data-top="background-position: 50% 0px;" data-bottom="background-position:50% -400px;">
+        <div class="section-clinic" data-stellar-background-ratio="0.1">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -74,7 +74,7 @@
                 </div>
         </div>
 
-        <div class="gray-background">
+        <div class="gray-background ">
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8 margin-top-200">
@@ -148,7 +148,7 @@
 
         <div class="padding-top-15"></div>
         </div>
-        <div class="therapy-section">
+        <div class="therapy-section" data-stellar-background-ratio="0.1">
             <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -398,7 +398,7 @@
         </div>
     </div>
 
-     <div class="where-we-at">
+     <div class="where-we-at" data-stellar-background-ratio="0.1">
          <div class="container">
              <div class="row">
                  <div class="col-md-12">
@@ -435,6 +435,10 @@
 <%def name="post_scripts()">
 <script>
 
+$(window).stellar();
+
+
+
 /*navigator.geolocation.getCurrentPosition(GetLocation);
 function GetLocation(location) {
     alert(location.coords.latitude);
@@ -443,7 +447,6 @@ function GetLocation(location) {
 }*/
 
 $('#maps-holder').css("height", parseInt($('.container').outerWidth()) / 2);
-
 $('#main-menu').affix({
       offset: {
         top: $('#main-menu').height()
@@ -482,9 +485,6 @@ var stylez = [
   }
   google.maps.event.addDomListener(window, 'load', initialize);
 
-var s = skrollr.init({
-    smoothScrolling:true
-});
 $('#first-circle').css("left", parseInt($('.container').css("margin-left")));
 //first circle alligned with logo
 $(window).resize(function() {
