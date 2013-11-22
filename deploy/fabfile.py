@@ -30,7 +30,7 @@ ENVIRONMENTS = {
     ,'live':Environment(
             repository="git@github.com:SinisaG/klinikWeb.git"
             ,process_groups=['p1','p2']
-            ,branch='LIVE')
+            ,branch='master')
 }
 
 EXTRA_SETUP = [

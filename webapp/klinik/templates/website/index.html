@@ -11,7 +11,7 @@
                             und Zwang
                     </div>
         </div>
-        <div class="gray-background">
+        <div id="depression" class="gray-background">
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8">
@@ -38,7 +38,7 @@
             </div>
         </div>
 
-        <div class="section-clinic" data-stellar-background-ratio="0.1">
+        <div id="clinic" class="section-clinic" data-stellar-background-ratio="0.1">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -74,7 +74,7 @@
                 </div>
         </div>
 
-        <div class="gray-background ">
+        <div id="my-team" class="gray-background ">
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8 margin-top-200">
@@ -148,7 +148,7 @@
 
         <div class="padding-top-15"></div>
         </div>
-        <div class="therapy-section" data-stellar-background-ratio="0.1">
+        <div id="therapy" class="therapy-section" data-stellar-background-ratio="0.1">
             <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -398,7 +398,7 @@
         </div>
     </div>
 
-     <div class="where-we-at" data-stellar-background-ratio="0.1">
+     <div id="where-we-are" class="where-we-at" data-stellar-background-ratio="0.1">
          <div class="container">
              <div class="row">
                  <div class="col-md-12">
@@ -438,18 +438,18 @@
 $(window).stellar();
 
 
+var $root = $('html, body');
+$('a').click(function() {
+    $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1000);
+    return false;
+});
 
-/*navigator.geolocation.getCurrentPosition(GetLocation);
-function GetLocation(location) {
-    alert(location.coords.latitude);
-    alert(location.coords.longitude);
-    alert(location.coords.accuracy);
-}*/
-
-$('#maps-holder').css("height", parseInt($('.container').outerWidth()) / 2);
+$('#maps-holder').css("height", parseInt($('.container').outerWidth()) * (2/5));
 $('#main-menu').affix({
       offset: {
-        top: $('#main-menu').height()
+        top: $('#main-menu').height()/2
       }
 });
 
@@ -469,7 +469,8 @@ var stylez = [
       zoom: 17,
       mapTypeControlOptions: {
        mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'tehgrayz']
-        }
+        },
+        scrollwheel: false
     };
     var map = new google.maps.Map(document.getElementById("maps-holder"),
         mapOptions);
@@ -489,7 +490,7 @@ $('#first-circle').css("left", parseInt($('.container').css("margin-left")));
 //first circle alligned with logo
 $(window).resize(function() {
     $('#first-circle').css("left", parseInt($('.container').css("margin-left")));
-    $('#maps-holder').css("height", parseInt($('.container').outerWidth()) / 3);
+    $('#maps-holder').css("height", parseInt($('.container').outerWidth()) / (2/5));
 });
 </script>
 </%def>
