@@ -105,8 +105,10 @@
                                 Temporemperum quo ma con nat perorupta sunderchil exernatus estes que volorio conserio
                           </div>
                           <div class="margin-top-40 margin-left-16">
+                              <div id="trigger-video">
                                 <img src="/static/img/play_video.svg" class = "icon"/>
-                                <div class="icon-text">Video ansehen</div>
+                                <div class="icon-text ">Video ansehen</div>
+                               </div>
                                 <div class ="margin-bottom-90" style="clear:both"></div>
                            </div>
                         </div>
@@ -412,8 +414,8 @@
                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
                                  </div>
                                  <div class="margin-top-40">
-                                        <img src="/static/img/directions.svg" class = "icon"/>
-                                        <div class="icon-text">Route berechnen</div>
+                                        <a href ="https://maps.google.de/maps?saddr=current+location&daddr=Friesenstra%C3%9Fe%2072%E2%80%9374,%20Koeln,%20Germany" target="_blank"><img src="/static/img/directions.svg" class = "icon"/>
+                                        <div class="icon-text">Route berechnen</div> </a>
                                         <div class="margin-top-40"></div>
                                  </div>
                               </div>
@@ -429,6 +431,22 @@
              </div>
          </div>
      </div>
+
+ <div class="modal fade" id="videoModal" role="dialog" aria-labelledby="About us" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     <object width="100%" height="100%">
+         <param name="movie" value="//www.youtube.com/v/wAWrXTn5Www?hl=sl_SI&amp;version=3"></param>
+         <param name="allowFullScreen" value="true"></param>
+         <param name="allowscriptaccess" value="always"></param>
+         <param name="autoplay" value="true"></param>
+         <embed id = "doctor-video" src="//www.youtube.com/v/wAWrXTn5Www?hl=sl_SI&amp;version=3&autoplay=1&rel=0&border=0" type="application/x-shockwave-flash" width="100%" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+     </object>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
 </%def>
 
 
@@ -436,7 +454,6 @@
 <script>
 
 $(window).stellar();
-
 
 var $root = $('html, body');
 $('a').click(function() {
@@ -492,5 +509,11 @@ $(window).resize(function() {
     $('#first-circle').css("left", parseInt($('.container').css("margin-left")));
     $('#maps-holder').css("height", parseInt($('.container').outerWidth()) / (2/5));
 });
+
+$('#trigger-video').on( "click", function() {
+    $('#videoModal').modal();
+});
 </script>
 </%def>
+
+
