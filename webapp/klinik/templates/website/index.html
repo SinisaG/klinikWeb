@@ -447,8 +447,7 @@
 
 <%def name="post_scripts()">
 <script>
-
-$(window).stellar();
+if(window.innerWidth > 991) $(window).stellar();
 
 var $root = $('html, body');
 $('a').click(function() {
