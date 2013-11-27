@@ -181,18 +181,11 @@
 
 /*********************/
 
-@media (max-width: 991px) {
-
-      .float-pills{
-        float:left !important;
-      }
+@media (max-width: @screen-md) {
 
   .nav{
      padding-top:5px;
   }
-  .brand-text-subtitle{
-        display:none;
-   }
 
   .navbar-brand{
       padding-top:10px;
@@ -201,16 +194,18 @@
       padding-top:5px;
 
       > li >a{
-
        padding:5px 15px 10px 0px;
       }
     }
-
     .brand-image{
       height:50px;
     }
     .navbar{
       margin-bottom:8px;
+    }
+
+    .nav-pills{
+      display:none;
     }
 }
 
@@ -247,10 +242,6 @@
 
     width:100%;
   }
-
-  .float-pills{
-        float:right;
-   }
 
 }
 
