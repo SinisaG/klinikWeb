@@ -179,50 +179,46 @@
  width:100%;
 }
 
+/*********************/
 
-#main-menu{
+@media (max-width: 991px) {
 
-  z-index:1;
-}
+      .float-pills{
+        float:left !important;
+      }
 
-  #main-menu.affix-top {
-    position: static;
+  .nav{
+     padding-top:5px;
   }
+  .brand-text-subtitle{
+        display:none;
+   }
 
-  #main-menu.affix {
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    background-color:rgba(255,255,255,1);
-    .brand-text-subtitle{
-      display:none;
-    }
-    .navbar-brand{
+  .navbar-brand{
       padding-top:10px;
     }
     .nav{
-      padding-top:25px;
+      padding-top:5px;
 
       > li >a{
 
        padding:5px 15px 10px 0px;
       }
     }
+
     .brand-image{
       height:50px;
     }
     .navbar{
       margin-bottom:8px;
     }
-  }
-
-.affix,.affix-top {
-   position:static;
 }
 
-
-/*********************/
+@media (max-width: 400px) {
+   .brand-text{
+    margin-left:0px !important;
+  }
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
@@ -252,10 +248,59 @@
     width:100%;
   }
 
+  .float-pills{
+        float:right;
+   }
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
+
+    .affix {
+      position: fixed;
+    }
+    #main-menu{
+
+    z-index:1;
+  }
+
+    #main-menu.affix-top {
+      position: static;
+    }
+
+    #main-menu.affix {
+      position: fixed;
+      right: 0;
+      left: 0;
+      top: 0;
+      background-color:rgba(255,255,255,1);
+      .brand-text-subtitle{
+        display:none;
+      }
+      .navbar-brand{
+        padding-top:10px;
+      }
+      .nav{
+        padding-top:25px;
+
+        > li >a{
+
+         padding:5px 15px 10px 0px;
+        }
+      }
+      .brand-image{
+        height:50px;
+      }
+      .navbar{
+        margin-bottom:8px;
+      }
+    }
+
+  .affix,.affix-top {
+     position:static;
+  }
+
 
   .circle-text{
     font-family: 'Frutiger Light';

@@ -223,9 +223,10 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/GPL-license.txt
                 setBackgroundPosition = (supportsBackgroundPositionXY ?
                         function($elem, x, y) {
                                 $elem.css({
-                                        'background-position-x': "75%",
+                                        'background-position-x': $elem.data("xPosition"),
                                         'background-position-y': y
                                 });
+
                         } :
                         function($elem, x, y) {
                                 $elem.css('background-position', "75%" + ' ' + y);
@@ -415,7 +416,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/GPL-license.txt
                                         offsetLeft,
                                         offsetTop,
                                         parentOffsetLeft = 0,
-                                        parentOffsetTop = 125,
+                                        parentOffsetTop = 0,
                                         tempParentOffsetLeft = 0,
                                         tempParentOffsetTop = 0;
 
