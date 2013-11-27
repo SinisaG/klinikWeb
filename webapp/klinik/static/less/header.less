@@ -2,11 +2,173 @@
   float:left;
 }
 
+
+
+//small screen nav
+ .nav-pills{
+   display:none;
+ }
+.brand-image{
+  height:50px;
+}
+
 .brand-text{
+  float:left;
+  margin-top:10px;
+  margin-left:15px;
+}
+
+
+  .brand-text-title{
+    font-family: "Frutiger Bold";
+    font-size: 16px;
+    line-height: 21px;
+    padding-bottom: 5px;
+      color:@blue4;
+  }
+
+  .brand-text-subtitle{
+    color:#4c4c4c;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Frutiger Bold";
+  }
+
+  .brand-subtext{
+    color:#4c4c4c;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Frutiger Regular";
+  }
+
+
+
+
+/*********************************************/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+
+  .brand-text-title{
+  font-family: "Frutiger Bold";
+  font-size: 22px;
+  padding-bottom: 15px;
+    color:@blue4;
+  }
+
+  .brand-text-subtitle{
+    color:#4c4c4c;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Frutiger Bold";
+  }
+
+  .brand-subtext{
+    color:#4c4c4c;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Frutiger Regular";
+  }
+
+  .brand-text{
   float:left;
   margin-top:20px;
   margin-left:20px;
 }
+
+  .brand-image{
+  height:80px;
+}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+
+  .menu-item{
+    font-family: "Frutiger Regular";
+    font-size: 14px;
+  }
+
+   .nav-pills{
+
+     display:block;
+   }
+
+
+  //affix
+    .affix {
+        position: fixed;
+      }
+      #main-menu{
+
+      z-index:6;
+    }
+
+    #main-menu.affix-top {
+      position: static;
+    }
+
+    #main-menu.affix {
+      position: fixed;
+      right: 0;
+      left: 0;
+      top: 0;
+      background-color:rgba(255,255,255,1);
+      .brand-text-subtitle{
+        display:none;
+      }
+      .navbar-brand{
+        padding-top:10px;
+      }
+      .nav{
+        padding-top:25px;
+
+        > li >a{
+
+         padding:5px 15px 10px 0px;
+        }
+      }
+      .brand-image{
+        height:50px;
+      }
+      .navbar{
+        margin-bottom:8px;
+      }
+    }
+
+  .affix,.affix-top {
+     position:static;
+  }
+
+  .brand-text-title{
+  font-family: "Frutiger Bold";
+  font-size: 22px;
+  padding-bottom: 15px;
+    color:@blue4;
+  }
+
+  .brand-text-subtitle{
+    color:#4c4c4c;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Frutiger Bold";
+  }
+
+  .brand-subtext{
+    color:#4c4c4c;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Frutiger Regular";
+  }
+
+  .menu-item{
+    font-family: "Frutiger Regular";
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width: @screen-lg-min) {
 
 .brand-text-title{
   font-family: "Frutiger Bold";
@@ -34,51 +196,8 @@
   font-size: 16px;
 }
 
-/*********************************************/
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
-
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
-
- .brand-text-title{
-  font-size: 28px;
-  }
-
-  .brand-text-subtitle{
-  font-size: 14px;
-  }
-
-  .menu-item{
-    font-family: "Frutiger Regular";
-    font-size: 14px;
-  }
-}
-
-@media (min-width: @screen-lg-min) {
-
-.brand-text-title{
-  font-size: 22px;
-}
-.brand-text-subtitle{
-  font-size: 16px;
-}
-.menu-item{
-  font-size: 16px;
-}
-  .nav {
-    > li {
-      > a {
-        padding: 10px 0px 10px 15px;
-      }
-    }
-  }
 }
 
 body{
-
   -webkit-font-smoothing:antialiased;
 }
