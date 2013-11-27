@@ -18,16 +18,16 @@
 
 .main-heading{
   font-family: "Frutiger Light";
-  font-size: 60px;
+  font-size: 36px;
   color:@blue4;
   margin-bottom:60px;
-  line-height:60px;
+  line-height:36px;
 }
 
 .site-text{
   font-family: 'Frutiger Light';
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 20px;
   color:@gray-black;
 }
 
@@ -166,6 +166,12 @@
 
 
 
+.responsive-wrapper{
+  padding:0 15px;
+
+}
+
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
@@ -181,6 +187,17 @@
     width:100%;
   }
 
+ .main-heading{
+  font-size: 60px;
+  line-height:60px;
+}
+
+ .site-text{
+  font-family: 'Frutiger Light';
+  font-size: 22px;
+  line-height: 30px;
+  color:@gray-black;
+}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -198,6 +215,10 @@
     margin-top:-230px;
    }
 
+ .responsive-wrapper{
+  padding:0 0px;
+
+}
 
 }
 
