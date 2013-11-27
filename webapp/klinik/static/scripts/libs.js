@@ -76,7 +76,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/GPL-license.txt
     if (this.affixed === affix) return
     if (this.unpin) this.$element.css('top', '')
 
-    $('#main-menu').hasClass("affix-top")? $('.fill-space').css("margin-top", offsetTop) :  $('.fill-space').css("margin-top", 0);
+    if(window.innerWidth > 992 ) $('#main-menu').hasClass("affix-top")? $('.fill-space').css("margin-top", offsetTop) :  $('.fill-space').css("margin-top", 0);
 
     this.affixed = affix
     this.unpin   = affix == 'bottom' ? position.top - scrollTop : null
