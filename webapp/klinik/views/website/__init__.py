@@ -29,7 +29,7 @@ def add_views(config):
     )
     config.add_view(
         route_name="website_home"
-        , view=index.default
+        , view=index.index
         , renderer=website_t("index.html")
     )
 

@@ -6,8 +6,41 @@
 // Base styles
 // --------------------------------------------------
 
+::-webkit-input-placeholder {
+   color: @gray-black;
+  font-family: 'Frutiger Bold';
+  font-size: 12px;
+  padding-left:1%;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: @gray-black;
+  font-family: 'Fruitger Bold';
+  font-size: 14px;
+    padding-left:1%;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: @gray-black;
+  font-family: 'Fruitger Bold';
+  font-size: 14px;
+    padding-left:1%;
+}
+
+:-ms-input-placeholder {
+   color: @gray-black;
+  font-family: 'Fruitger Bold';
+  font-size: 14px;
+    padding-left:1%;
+}
+
+
 // Core styles
 .btn {
+  background-color: @blue1;
+  color:white;
+  text-transform: uppercase;
+  padding:5px 10%;
   display: inline-block;
   margin-bottom: 0; // For input.btn
   font-weight: @btn-font-weight;
@@ -17,17 +50,18 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   white-space: nowrap;
-  .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+  font-family: 'Frutiger Regular';
   .user-select(none);
-
+  border:2px solid @blue2;
   &:focus {
     .tab-focus();
   }
 
   &:hover,
   &:focus {
-    color: @btn-default-color;
+    color: darken(white, 50%);
     text-decoration: none;
+    background-color: darken(@blue1, 2%);
   }
 
   &:active,
@@ -35,6 +69,9 @@
     outline: 0;
     background-image: none;
     .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+    border: 2px solid @blue1;
+    background-color: @blue2;
+
   }
 
   &.disabled,

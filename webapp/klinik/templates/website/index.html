@@ -1,5 +1,5 @@
 <%inherit file="layout.html"/>
-
+<%namespace file="klinik:common/lib/formlib/templates/baseform.html" name="forms"/>
 
 <%def name="content()">
 
@@ -396,6 +396,36 @@
          </div>
      </div>
 
+      <div class="gray-background">
+          <div class="container">
+              <div class="row">
+               <div class="col-md-8 col-md-offset-2">
+
+                   <div class="margin-top-100 main-heading bottom">
+                       Kontakt
+                   </div>
+                    <div class="contact-holder margin-top-40">
+                      <form class="${view.form.classes}" method="post" id="${view.form.id}">
+                            ${forms.prelims(view.form)}
+                          <div class="form-field">
+                           <input type="text" id = "contactForm.name" name ="contactForm.name" required placeholder="Name"/>
+                           </div>
+                          <div class="form-field">
+                           <input type="email" id = "contactForm.email" name ="contactForm.email" required placeholder="E-Mail Addresse"/>
+                          </div>
+                           <div class="form-field">
+                            <textarea type="text" id = "contactForm.message" name ="contactForm.message" required placeholder="Nachricht"></textarea>
+                           </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn">Schicken</button>
+                        </div>
+                    </form>
+                    </div>
+               </div>
+                  </div>
+           </div>
+      </div>
+
  <div class="modal fade" id="videoModal" role="dialog" aria-labelledby="About us" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -412,6 +442,8 @@
 
 
 </%def>
+
+
 
 
 <%def name="post_scripts()">
@@ -475,6 +507,7 @@ $(window).resize(function() {
 $('#trigger-video').on( "click", function() {
     $('#videoModal').modal();
 });
+
 </script>
 </%def>
 

@@ -1037,3 +1037,4 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/GPL-license.txt
     .on('hidden.bs.modal', '.modal', function () { $(document.body).removeClass('modal-open') })
 
 }(jQuery);
+
