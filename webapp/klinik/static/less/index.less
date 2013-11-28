@@ -46,7 +46,6 @@
   .background-image('../img/clinic2.jpg');
   padding-bottom:10%;
   padding-top:22%;
-  background-attachment:fixed;
     background-size: cover;
 }
 
@@ -112,14 +111,12 @@
   font-family: 'Frutiger Bold';
   font-size: 18px;
   line-height: 28px;
-  margin-left:16%;
   color:@gray-black
 }
 
 .doctor-description{
   font-size: 16px;
   line-height: 20px;
-  margin-left:16%;
   color:@gray-black;
   max-width:100%;
 }
@@ -137,7 +134,6 @@
   .background-image('../img/therapy2.jpg');
   padding-top:140px;
   padding-bottom:290px;
-    background-attachment:fixed;
     background-size: cover;
 }
 
@@ -163,7 +159,6 @@
   padding-top:140px;
   padding-bottom:140px;
   .background-image('../img/station.jpg');
-    background-attachment:fixed;
     background-size: cover;
 }
 
@@ -180,10 +175,46 @@
 
 }
 
+.text-section{
 
+  display:none;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
+
+
+
+.text-section{
+
+  display:block;
+}
+
+  .where-we-at{
+
+  padding-top:140px;
+  padding-bottom:140px;
+  .background-image('../img/station.jpg');
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+  .therapy-section{
+
+  .background-image('../img/therapy2.jpg');
+  padding-top:140px;
+  padding-bottom:290px;
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+  .section-clinic{
+  .background-image('../img/clinic2.jpg');
+  padding-bottom:10%;
+  padding-top:22%;
+  background-attachment:fixed;
+    background-size: cover;
+}
 
   .cover-image{
     width:100%;
@@ -198,7 +229,6 @@
 .doctor-description{
   font-size: 16px;
   line-height: 20px;
-  margin-left:16%;
   color:@gray-black;
   max-width:100%;
   width:300px;
@@ -218,7 +248,6 @@
     font-family: 'Frutiger Bold';
     font-size: 18px;
     line-height: 28px;
-    margin-left:16%;
     color:@gray-black
   }
 
