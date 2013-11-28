@@ -59,7 +59,7 @@
                                                    Diese Verfahren gehen bei uns Hand in
                                                     Hand mit Psychotherapieverfahren, welche sich bei der Depression als wirksam herausgestellt haben. Die sogenannten Komplementärtherapien runden das Therapiespektrum ab – hierzu zählen Kunst- und Körpertherapie, Ergo-, Musik- und Physiotherapie. Wir stellen Ihnen unser Therapieangebot auf den nächsten Seiten im Einzelnen vor.
                                              </div>
-                                             <div class="margin-top-40">
+                                             <div class="margin-top-40" id = "open-gallery">
                                                     <img src="/static/img/gallery.svg" class = "icon"/>
                                                     <div class="icon-text">Galerie ansehen</div>
                                                     <div class ="margin-bottom-90" style="clear:both"></div>
@@ -87,20 +87,22 @@
                 <div id="main-man">
                     <div class="row">
                          <div class="col-md-offset-2 col-md-7">
-                          <div class="name-text">
-                              Dr. med. Christian Voß
-                          </div>
-                          <div class="function-text">
-                                Facharzt für Psychiatrie und Psychotherapie
-                                Leitender Arzt und Geschäftsführer
-                          </div>
-                          <div class="margin-top-40">
-                              <div id="trigger-video">
-                                <img src="/static/img/play_video.svg" class = "icon"/>
-                                <div class="icon-text ">Video ansehen</div>
-                               </div>
-                                <div class ="margin-bottom-90" style="clear:both"></div>
-                           </div>
+                             <div class="responsive-wrapper">
+                                  <div class="name-text">
+                                      Dr. med. Christian Voß
+                                  </div>
+                                  <div class="function-text">
+                                        Facharzt für Psychiatrie und Psychotherapie
+                                        Leitender Arzt und Geschäftsführer
+                                  </div>
+                                  <div class="margin-top-40">
+                                      <div id="trigger-video">
+                                        <img src="/static/img/play_video.svg" class = "icon"/>
+                                        <div class="icon-text ">Video ansehen</div>
+                                       </div>
+                                        <div class ="margin-bottom-90" style="clear:both"></div>
+                                   </div>
+                                 </div>
                         </div>
                     </div>
                  </div>
@@ -439,8 +441,6 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
-
 </%def>
 
 
@@ -465,6 +465,8 @@ $('#main-menu').affix({
 });
 
 function initialize() {
+
+ $(window).stellar();
 
 var stylez = [
     {
