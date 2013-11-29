@@ -430,7 +430,8 @@
       width: 100px;
       height: 100px;
       right:10%;
-      top:-10%;
+      top:10%;
+      z-index:1;
   }
 
   .circle-4-text{
@@ -443,6 +444,14 @@
     padding-right: 10px;
   }
 
+.circle-5{
+     display:none;
+}
+
+.circle-5-text{
+
+     display: none;
+}
 
 @media (min-width: @screen-sm-min) {
 
@@ -506,7 +515,8 @@
       width: 150px;
       height: 150px;
       right:10%;
-      top:-15%;
+      top:10%;
+      z-index:1;
   }
 
   .circle-4-text{
@@ -516,7 +526,7 @@
       line-height: 20px;
       margin-left: 30px;
       margin-top:35px;
-    padding-right: 10px;
+      padding-right: 10px;
   }
 
 }
@@ -576,8 +586,9 @@
   .circle-4{
       width: 200px;
       height: 200px;
-      left:100%;
-      top:10%;
+      right:0%;
+      top:40%;
+      z-index:1;
   }
 
   .circle-4-text{
@@ -588,6 +599,26 @@
       margin-left: 40px;
       margin-top:70px;
   }
+
+     .circle-5{
+      width: 200px;
+      height: 200px;
+      left:0%;
+      top:50%;
+      z-index:1;
+       display:block;
+   }
+
+    .circle-5-text{
+
+      font-family: 'Frutiger Regular';
+      font-size: 20px;
+      line-height: 24px;
+      margin-left: 60px;
+      margin-top:110px;
+      z-index: 1;
+      display:block;
+   }
 
 }
 
@@ -652,8 +683,9 @@
    .circle-4{
       width: 300px;
       height: 300px;
-      left:100%;
-      top:10%;
+      right:10%;
+      top:40%;
+      z-index:1;
    }
 
    .circle-4-text{
@@ -663,6 +695,36 @@
       line-height: 30px;
       margin-left: 60px;
       margin-top:110px;
+   }
+
+   .circle-5{
+      width: 300px;
+      height: 300px;
+      left:5%;
+      top:50%;
+
+   }
+
+    .circle-5-text{
+
+      font-family: 'Frutiger Regular';
+      font-size: 24px;
+      line-height: 30px;
+      margin-left: 60px;
+      margin-top:110px;
+
+   }
+
+   .circle-map{
+
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+       position:absolute;
+      bottom:0%;
+      right:10%;
+     z-index: 1;
+     border: 2px solid white;
    }
 }
 
