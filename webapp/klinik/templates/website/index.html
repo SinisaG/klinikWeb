@@ -45,7 +45,7 @@
         </div>
 
         <div id="clinic" class="section-clinic position-relative" data-stellar-background-ratio="0.2" data-x-position="75%">
-            <img src="/static/img/circle_4.svg"  class="circle circle-4"/>
+            <img src="/static/img/circle_4.svg" data-stellar-ratio="2"  class="circle circle-4"/>
 
                 <div class="container">
                     <div class="row">
@@ -147,7 +147,7 @@
         </div>
 
      <div class="gray-background text-section position-relative">
-     <img src="/static/img/circle_1.svg" class="circle circle-5"/>
+     <img src="/static/img/circle_1.svg" data-stellar-ratio="2" class="circle circle-5"/>
 
          <div class="padding-top-75"></div>
         <div class="container">
@@ -382,7 +382,7 @@
     </div>
 
      <div id="where-we-are" class="where-we-at position-relative" data-stellar-background-ratio="0.2" data-x-position="75%">
-          <img src="/static/img/map_pic.jpg" class="circle-map"/>
+          <img src="/static/img/map_pic.jpg" data-stellar-ratio="2" class="circle-map"/>
          <div class="container">
              <div class="row">
                  <div class="col-md-12">
@@ -495,7 +495,7 @@
 <%def name="post_scripts()">
 <script>
 
-//if(window.innerWidth > 992) $(window).stellar();
+if(window.innerWidth > 992) $(window).stellar();
 
 var $root = $('html, body');
 $('a').click(function() {
