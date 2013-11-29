@@ -43,8 +43,7 @@
 // Actual modal
 .modal-content {
   position: relative;
-  background-color: rgba(255,255,255,0.7);
-  .box-shadow(0 3px 9px rgba(0,0,0,.5));
+  background-color: transparent;
   background-clip: padding-box;
   // Remove focus outline from opened modal
   outline: none;
@@ -61,7 +60,7 @@
   background-color: @modal-backdrop-bg;
   // Fade for backdrop
   &.fade { .opacity(0); }
-  &.in { .opacity(.5); }
+  &.in { .opacity(0.7); }
 }
 
 // Modal header
@@ -118,7 +117,7 @@
     padding-bottom: 30px;
   }
   .modal-content {
-    .box-shadow(0 5px 15px rgba(0,0,0,.5));
+
   }
 
 }

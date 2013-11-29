@@ -23,6 +23,8 @@
     > a > img {
       .img-responsive();
       line-height: 1;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -80,12 +82,12 @@
 
   // Set gradients for backgrounds
   &.left {
-    #gradient > .horizontal(@start-color: rgba(0,0,0,.5); @end-color: rgba(0,0,0,.0001));
+
   }
   &.right {
     left: auto;
     right: 0;
-    #gradient > .horizontal(@start-color: rgba(0,0,0,.0001); @end-color: rgba(0,0,0,.5));
+
   }
 
   // Hover/focus state
@@ -108,11 +110,11 @@
   }
   .icon-prev,
   .glyphicon-chevron-left {
-    left: 50%;
+    left: 0%;
   }
   .icon-next,
   .glyphicon-chevron-right {
-    right: 50%;
+    right: 0%;
   }
   .icon-prev,
   .icon-next {

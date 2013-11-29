@@ -446,28 +446,28 @@
 <div class="modal fade" id="galleryModal" role="dialog" aria-labelledby="About us" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-                <div class="item active">
-                  <img src=" http://placehold.it/500x150">
-                </div>
-               <div class="item ">
-                  <img src=" http://placehold.it/600x150">
-                </div>
-               <div class="item ">
-                  <img src=" http://placehold.it/700x150">
-                </div>
-            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-              </a>
-         </div>
-         </div>
+            <div id="carousel-gallery" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="http://placekitten.com/g/500/490">
+                    </div>
+                   <div class="item ">
+                      <img src="http://placekitten.com/g/500/480">
+                    </div>
+                   <div class="item ">
+                      <img src="http://placekitten.com/g/500/300">
+                    </div>
+                  </div>
+                <a class="left carousel-control" href="#carousel-gallery" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-gallery" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+             </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
-</div><!
+</div>
 
 </%def>
 
@@ -477,7 +477,14 @@
 <%def name="post_scripts()">
 <script>
 
-
+var $root = $('html, body');
+$('a').click(function() {
+    if($('#galleryModal').is(":visible")) return true;
+    $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1000);
+    return false;
+});
 
 $('#maps-holder').css("height", parseInt($('.container').outerWidth()) * (2/5));
 $('#main-menu').affix({
