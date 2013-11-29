@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-default" role="navigation">
-                      <a class="navbar-brand" href="#">
+                      <a class="navbar-brand" href="${request.fwd_url('website_home')}">
                           <img src="/static/img/logo.svg" alt="${g.project_name}" class="brand-image"/>
                           <div class="brand-text">
                                 <div class="brand-text-title">
@@ -30,11 +30,11 @@
                           </div>
                       </a>
                       <ul class="nav nav-pills pull-right">
-                          <li><a href="#depression" class="menu-item">Die Depression</a></li>
-                          <li><a href="#clinic" class="menu-item">Die Klinik</a></li>
-                          <li><a href="#therapy" class="menu-item">Die Therapien</a></li>
-                          <li><a href="#where-we-are" class="menu-item">Ihr Weg zu uns</a></li>
-                          <li><a href="#" class="menu-item">Impressum</a></li>
+                          <li><a href="${ '#depression' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#depression' }" class="menu-item">Die Depression</a></li>
+                          <li><a href="${ '#clinic' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#clinic'}" class="menu-item">Die Klinik</a></li>
+                          <li><a href="${ '#therapy' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#therapy'}" class="menu-item">Die Therapien</a></li>
+                          <li><a href="${ '#where-we-are' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#where-we-are'}" class="menu-item">Ihr Weg zu uns</a></li>
+                          <li><a href="${request.fwd_url('website_impressum')}" class="menu-item">Impressum</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -85,16 +85,16 @@
                 <div class="row">
                     <div class="col-md-12 margin-top-20">
                         <div class="footer-item">
-                            <div class="footer-text">Die Depression</div>
+                           <a href="${ '#depression' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#depression' }"> <div class="footer-text">Die Depression</div></a>
                         </div>
                         <div class="footer-item">
-                            <div class="footer-text">Die Klinik</div>
+                          <a href="${ '#clinic' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#clinic'}">  <div class="footer-text">Die Klinik</div> </a>
                         </div>
                         <div class="footer-item">
-                            <div class="footer-text">Die Therapien</div>
+                            <a href="${ '#therapy' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#therapy'}">  <div class="footer-text">Die Therapien</div> </a>
                         </div>
                          <div class="footer-item">
-                            <div class="footer-text">Ihr Weg zu uns</div>
+                          <a href="${ '#where-we-are' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#where-we-are'}">  <div class="footer-text">Ihr Weg zu uns</div> </a>
                         </div>
                      </div>
                 </div>
