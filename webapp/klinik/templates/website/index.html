@@ -6,7 +6,7 @@
 
         <div class="cover-image position-relative " data-stellar-background-ratio="0.3" data-x-position="75%">
             <img src="/static/img/circle_1.svg" class="circle-1 circle" data-stellar-ratio="2" >
-            <img src = "/static/img/circle_2.svg" class="circle-2 circle" data-stellar-ratio="1" />
+            <img src = "/static/img/circle_2.svg" class="circle-2 circle" data-stellar-ratio="1.5" />
          </div>
 
         <div id="depression" class="gray-background position-relative">
@@ -526,7 +526,8 @@ var stylez = [
       mapTypeControlOptions: {
        mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'tehgrayz']
         },
-        scrollwheel: false
+        scrollwheel: false,
+        draggable: false
     };
     var map = new google.maps.Map(document.getElementById("maps-holder"),
         mapOptions);
