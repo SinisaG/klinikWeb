@@ -31,9 +31,8 @@
    color: @gray-black;
   font-family: 'Fruitger Bold';
   font-size: 14px;
-    padding-left:1%;
+  padding-left:1%;
 }
-
 
 // Core styles
 .btn {
@@ -52,16 +51,16 @@
   white-space: nowrap;
   font-family: 'Frutiger Regular';
   .user-select(none);
-  border:2px solid lighten(@blue1, 15%);
+  letter-spacing: 0.2em;
   &:focus {
     .tab-focus();
   }
 
   &:hover,
   &:focus {
-    color: darken(white, 50%);
+    color: white;
     text-decoration: none;
-    background-color: darken(@blue1, 2%);
+    background-color: black;
   }
 
   &:active,

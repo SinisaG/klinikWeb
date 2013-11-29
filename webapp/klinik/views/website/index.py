@@ -5,3 +5,7 @@ from klinik.views.website.forms import ContactForm
 
 class index(FormHandler):
     form =ContactForm
+
+
+def empty(context, request):
+    return {}

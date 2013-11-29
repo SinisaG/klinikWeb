@@ -33,8 +33,15 @@ def add_views(config):
         , renderer=website_t("index.html")
     )
 
+    config.add_view(
+        route_name="website_impressum"
+        , view=index.empty
+        , renderer=website_t("impressum.html")
+    )
+
 def add_routes(config):
     config.add_route("website_home", "/", factory=WebsiteResource)
+    config.add_route("website_impressum", "/impressum", factory=WebsiteResource)
 
 def includeme(config):
     add_settings(config)

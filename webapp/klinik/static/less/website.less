@@ -5,11 +5,20 @@
 @import "spacing.less";
 @import "index.less";
 @import "helpers.less";
-
+@import "impressum.less";
 
 .background-size(@size){
   -webkit-background-size: @size;
   -moz-background-size: @size;
   -o-background-size: @size;
   background-size: @size;
+}
+
+a{
+  color:@blue1;
+
+  &:hover{
+    color:@blue4;
+     text-decoration: none;
+  }
 }
