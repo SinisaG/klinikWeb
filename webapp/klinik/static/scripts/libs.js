@@ -420,6 +420,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/GPL-license.txt
                                         parentOffsetTop = 0,
                                         tempParentOffsetLeft = 0,
                                         tempParentOffsetTop = 0;
+                                $this.parentOffsetTop = $this.data("yOffset");
 
                                 // Ensure this element isn't already part of another scrolling element
                                 if (!$this.data('stellar-elementIsActive')) {

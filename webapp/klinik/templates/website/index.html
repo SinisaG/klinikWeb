@@ -5,12 +5,12 @@
 
 
         <div class="cover-image position-relative " data-stellar-background-ratio="0.3" data-x-position="75%">
-            <div class="circle-1 circle">
+            <div class="circle-1 circle" data-stellar-ratio="2" data-y-offset="15%">
                     <div class="circle-1-text circle-text">
                         Depression Heilen
                     </div>
             </div>
-            <div class="circle-2 circle">
+            <div class="circle-2 circle" data-stellar-ratio="2" data-y-offset="35%">
                     <div class="circle-2-text circle-text">
                         Schwerpunkte
                         Depression, Angst
@@ -19,6 +19,7 @@
             </div>
         </div>
         <div id="depression" class="gray-background">
+
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8">
@@ -41,7 +42,17 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 margin-top-100  margin-bottom-200">
-                        <img src="/static/img/depression.jpg" class="full-size">
+                        <div class=" position-relative">
+                            <img src="/static/img/depression.jpg" class="full-size">
+                             <div class="circle-3 circle" data-stellar-ratio="2"  data-y-offset="35%">
+                                <div class="circle-text circle-3-text-heading">
+                                    4 Mil.
+                                </div>
+                                <div class="circle-text circle-3-text">
+                                    Deutsche leiden unter Depression
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -54,7 +65,12 @@
                             <div class="blur-holder padding-top-75">
                                 <div class="row">
                                          <div class="col-md-offset-2 col-md-8">
-                                             <div class="responsive-wrapper">
+                                             <div class="responsive-wrapper position-relative">
+                                                 <div class="circle circle-4">
+                                                     <div class="circle-text circle-4-text">
+                                                         Temporemperum quo ma con nat perorupta sunderchil que
+                                                     </div>
+                                                 </div>
                                                 <div class="main-heading">
                                                     Die Klinik
                                                 </div>
@@ -489,7 +505,7 @@
 <%def name="post_scripts()">
 <script>
 
-if(window.innerWidth > 992) $(window).stellar();
+//if(window.innerWidth > 992) $(window).stellar();
 
 var $root = $('html, body');
 $('a').click(function() {
