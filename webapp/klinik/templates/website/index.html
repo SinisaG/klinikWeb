@@ -523,7 +523,6 @@ $('a').click(function() {
     return false;
 });
 
-$('#maps-holder').css("height", parseInt($('.container').outerWidth()) * (2/5));
 $('#main-menu').affix({
       offset: {
         top: $('#main-menu').height()/2
@@ -567,7 +566,6 @@ $('#first-circle').css("left", parseInt($('.container').css("margin-left")));
 //first circle alligned with logo
 $(window).resize(function() {
     $('#first-circle').css("left", parseInt($('.container').css("margin-left")));
-    $('#maps-holder').css("height", parseInt($('.container').outerWidth()) / (2/5));
 });
 
 $('#trigger-video').on( "click", function() {
