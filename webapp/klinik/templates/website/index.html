@@ -488,7 +488,9 @@
 
 <%def name="post_scripts()">
 <script>
- $(window).stellar();
+
+if(window.innerWidth > 992) $(window).stellar();
+
 var $root = $('html, body');
 $('a').click(function() {
     if($('#galleryModal').is(":visible")) return true;
