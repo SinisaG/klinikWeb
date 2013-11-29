@@ -96,6 +96,9 @@
                          <div class="footer-item">
                           <a href="${ '#where-we-are' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#where-we-are'}">  <div class="footer-text">Ihr Weg zu uns</div> </a>
                         </div>
+                         <div class="footer-item">
+                          <a href="${request.fwd_url('website_impressum')}">  <div class="footer-text">Impressum</div> </a>
+                        </div>
                      </div>
                 </div>
             </div>
