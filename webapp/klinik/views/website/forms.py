@@ -1,9 +1,6 @@
 from hnc.forms.formfields import EmailField, StringField, REQUIRED, TextareaField, BaseForm
 from turbomail import interface, Message
 
-__author__ = 'Sinisa'
-
-
 class   ContactForm(BaseForm):
     id="contactForm"
     classes="form-validated form-horizontal"

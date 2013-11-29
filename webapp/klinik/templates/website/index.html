@@ -5,6 +5,18 @@
 
 
         <div class="cover-image position-relative " data-stellar-background-ratio="0.3" data-x-position="75%">
+            <div class="circle-1 circle">
+                    <div class="circle-1-text circle-text">
+                        Depression Heilen
+                    </div>
+            </div>
+            <div class="circle-2 circle">
+                    <div class="circle-2-text circle-text">
+                        Schwerpunkte
+                        Depression, Angst
+                        und Zwang
+                    </div>
+            </div>
         </div>
         <div id="depression" class="gray-background">
             <div class="container">
@@ -476,7 +488,7 @@
 
 <%def name="post_scripts()">
 <script>
-
+ $(window).stellar();
 var $root = $('html, body');
 $('a').click(function() {
     if($('#galleryModal').is(":visible")) return true;
@@ -494,8 +506,6 @@ $('#main-menu').affix({
 });
 
 function initialize() {
-
- $(window).stellar();
 
 var stylez = [
     {
