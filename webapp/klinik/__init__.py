@@ -1,5 +1,7 @@
 from datetime import datetime, date
 import logging
+from hnc.apps.static_content.views import set_up_content_mgmt_app
+from klinik.common.models.content import GetStaticContentProc
 from klinik.views.admin.__resources__ import AdminResource
 from pyramid.authentication import SessionAuthenticationPolicy
 from pyramid.authorization import ACLAuthorizationPolicy
@@ -41,6 +43,7 @@ class Security(SessionAuthenticationPolicy):
         return principals
 
 
+
 def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
     """
@@ -69,6 +72,12 @@ def main(global_config, **settings):
 
 
     config.add_subscriber(add_renderer_variables, 'pyramid.events.BeforeRender')
+
+    def dictionary_factory(request):
+        result = GetStaticContentProc(request)
+        return {k.key:k.value for k in result.Static}
+    POFILE = set_up_content_mgmt_app(config, "klinik:locale/klinik.pot", dictionary_factory)
+    g.set_po_file(POFILE)
 
     config.include("klinik.views.website")
     config.include("klinik.views.admin", route_prefix="/admin")
