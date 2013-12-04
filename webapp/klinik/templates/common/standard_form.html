@@ -1,0 +1,29 @@
+<%namespace file="klinik:common/lib/formlib/templates/baseform.html" name="baseform"/>
+
+<%def name="build_base_form(form, values, errors)">
+    <%
+        values_ = values.get(form.id, {})
+        errors_ = errors.get(form.id, {})
+    %>
+    <form class="${form.grid.form_classes}" id="${form.id}" method="POST">
+        ${baseform.prelims(form)}
+        %for field in form.fields:
+            ${field.render(form.id, request, values_, errors_, view, grid = form.grid)|n}
+        %endfor
+        ${caller.body()}
+    </form>
+</%def>
+
+
+<%def name="css()">
+</%def>
+
+<%def name="scripts()">
+    <script>
+        /*require(["form"], function(Form){
+            $(".form-validated").each(function(idx, form){
+                new Form({el: $(form)});
+            })
+        });**/
+    </script>
+</%def>

@@ -1,0 +1,60 @@
+<%inherit file="../base.html"/>
+
+<%block name="html_tags">ng-app="adminapp"</%block>
+
+<%def name="extra_head()">
+</%def>
+
+<%def name="layout_scripts()">
+</%def>
+
+
+<%block name="global_page">
+    <div class="navbar navbar-static-top">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="${url("admin_home")}">${g.project_name} - Admin Area</a>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav pull-right">
+            %if not ctxt.user.isAnon():
+                <li><a href="${url('admin_logout')}">Log out</a></li>
+            %endif
+            </ul>
+        </div>
+   </div>
+
+   <div id="global-frame" class="body-wrapper">
+        <%block name="outerContentBody">
+            <div class="content-menu">
+                <%block name="contentmenu">${self.menu(ctxt.user, ctxt.sub_area_route)}</%block>
+            </div><div class="content-body has-status">
+                <div class="reset-clearfix">
+                    ${self.header_messages(request.session.pop_flash("generic_messages"))}
+                    ${self.content()}
+                </div>
+            </div>
+        </%block>
+   </div>
+</%block>
+
+
+
+
+<%def name="menu(user, sub_area_route)">
+    %if not user.isAnon():
+    <ul class="nav-list">
+        %for entry in ctxt.main_menu:
+            %if entry.menu_label:
+                <li class="${'active' if sub_area_route == entry.route_name else ''}">
+                    <a class="nav-entry-link" href="${url(entry.route_name)}">${entry.menu_label|n}</a>
+                </li>
+            %endif
+        %endfor
+    </ul>
+    %endif
+</%def>
+
+

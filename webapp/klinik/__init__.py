@@ -1,5 +1,6 @@
 from datetime import datetime, date
 import logging
+from klinik.views.admin.__resources__ import AdminResource
 from pyramid.authentication import SessionAuthenticationPolicy
 from pyramid.authorization import ACLAuthorizationPolicy
 from pyramid.config import Configurator
@@ -70,5 +71,6 @@ def main(global_config, **settings):
     config.add_subscriber(add_renderer_variables, 'pyramid.events.BeforeRender')
 
     config.include("klinik.views.website")
-
+    config.include("klinik.views.admin", route_prefix="/admin")
+    config.add_route("admin_home", "/admin", factory=AdminResource) # this is required to admin tool is at /admin and not /admin/
     return config.make_wsgi_app()

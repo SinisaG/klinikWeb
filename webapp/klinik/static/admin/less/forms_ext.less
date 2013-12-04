@@ -1,0 +1,203 @@
+@wtf-color: #ff55ee;
+
+//File picker compatibility
+.dragdrop-disabled{display:none;}
+.dragdrop-enabled {display: block;}
+html.lt-ie9 {
+.dragdrop-enabled {display: none;}
+.dragdrop-disabled{display:block;}
+}
+
+.pseudo-controls {
+  font-size:20px;
+}
+
+.pseudo-input{
+  color:@text-color;
+  background-color: darken(@input-bg, 10%);
+  .box-shadow(inset -1px 1px 3px rgba(0,0,0,.15));
+}
+
+
+.file-upload-control {
+  @width: 120px;
+  .file-picker-upload {
+    img {max-width:100%;}
+    &.empty {
+       .pseudo-input();
+    }
+    display: inline-block;
+    min-height:@width;
+    min-width: @width;
+    border:1px solid gray;
+    padding-bottom: 0;
+    position: relative;
+    overflow:hidden;
+    > .info {color:@text-color;}
+    &.empty:before {
+      .glyphicon;
+      content: "\e060";
+      font-size: 3em;
+
+      color:@wtf-color;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      line-height: 0;
+      margin-left: -.5em;
+    }
+    &.empty.drop-target:before {content: "\e025";}
+    &.document{
+      min-height:@width * 2 / 3;
+      max-width: @width * 2 / 3;
+      &.empty:before {content: "\1f4ce";}
+      > .file-download {
+        line-height:@width / 6;
+        text-align: center;
+        padding-top:@width / 6;
+        padding-bottom:@width / 6;
+        > a {color:white;}
+      }
+    }
+  }
+  .file-upload-wrap {
+    position: relative;
+    >.btn{width:@width;}
+    >.file-upload-btn{.opacity(0);position:absolute;width:@width;height: 100%;left: 0;top:0;}
+  }
+  .info {font-size: @font-size-small;}
+}
+
+.js-form-widget {
+  position: relative;
+  > .file-upload-btn {.opacity(0); position: relative;width:1px;height:1px;position: absolute;top:0;left:0;}
+}
+
+.multi-file-upload-control {
+  .file-picker-upload {
+    padding: 7px 7px 45px;
+    width:100%;
+    position: relative;
+    overflow:hidden;
+    .pseudo-input();
+    &:before {
+      font-family: 'Glyphicons Halflings';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 3em;
+      -webkit-font-smoothing: antialiased;
+      content: "\e060 \e060 \e060";
+      letter-spacing: 10px;
+      color:@wtf-color;
+      position: absolute;
+      right:0;
+      bottom:10px;
+      line-height: 1em;
+    }
+    &.drop-target:before {
+      content: "\e025 \e025 \e025";
+    }
+  }
+  .picture {
+    float: left;
+    overflow: hidden;
+    margin: 3px;
+    position: relative;
+    > img {height: 100px;}
+  }
+}
+
+.username-input {
+  position: relative;
+  .textaligned {
+    position: absolute;
+    top:0;
+    left:0;
+    width:96px;
+    text-align: right;
+    color:@text-color;
+    height:@input-height-base;
+    line-height:@input-height-base;
+    font-size:@font-size-base;
+  }
+  > .form-control {
+    color:@brand-primary;
+    font-weight:bold;
+    margin-right:50px;
+    padding-left: 96px;
+
+    &.input-lg {
+      padding-left: 120px;
+    }
+  }
+}
+.username-input-group {position: relative;clear:both;}
+.username-input-group.input-larger {
+  .textaligned {
+      height:@input-height-large;
+      line-height:@input-height-large - 20px;
+      padding: 10px 0;
+      font-size:@font-size-large;
+      width:120px;
+  }
+  .username-input {padding-right:60px;}
+  .help-inline {
+    color:red;
+    margin-top:5px;
+    font-size:@font-size-small;
+  }
+  &.valid .username-input {
+    .background-image("../img/validation.png");
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+  }
+  &.has-error .username-input {
+    .background-image("../img/validation.png");
+    background-position: 100% -44px;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.progress-number {
+  position: absolute;
+  left:0;
+  top: 50%;
+  width: 100%;
+  height: 0;
+  text-align: center;
+  line-height: 0;
+  margin-top: auto;
+  font-size: 32px;
+
+}
+.progress-indicator {
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  background-color: rgba(0,0,0,.2);
+  .transition(width .1s ease-in-out);
+}
+
+
+.remove {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  font-size: 1.5em;
+  cursor: pointer;
+  background: white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 24px;
+}
+
+
+.map-container {
+  position: relative;
+  height:500px;
+  width:100%;
+  overflow: hidden;
+}

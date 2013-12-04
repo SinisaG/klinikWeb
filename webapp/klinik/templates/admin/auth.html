@@ -1,0 +1,15 @@
+<%inherit file="form.html"/>
+<%namespace file="${common('standard_form.html')}" name="standard_form"/>
+
+<%def name="forms(form)">
+    <div class="col-lg-8">
+        <legend>${form.label}</legend>
+        <div class="row">
+        <%standard_form:build_base_form form="${form}" values="${values}" errors="${errors}">
+            <button type="sumbit" name="${form.id}._proceed" value="true" class="btn btn-primary">${getattr(form, 'submit_label', 'Login')}</button>
+            <a href="${form.cancel_url(request)}" class="btn btn-default">${getattr(form, 'cancel_label', 'Cancel')}</a>
+        </%standard_form:build_base_form>
+        </div>
+    </div>
+</%def>
+

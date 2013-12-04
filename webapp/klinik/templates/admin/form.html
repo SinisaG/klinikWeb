@@ -1,0 +1,48 @@
+<%inherit file="layout.html"/>
+<%namespace file="../common/standard_form.html" name="standard_form"/>
+
+<%def name="bcrumbs()"></%def>
+
+
+<%def name="content()">
+    <div class="padded-body mar-top-1">
+        %if hasattr(view, 'page_title'):
+            <h4>${view.page_title}</h4>
+        %endif
+        ${self.forms(view.form)}
+    </div>
+</%def>
+
+
+<%def name="forms(form)">
+    <div class="col-lg-8">
+        %if hasattr(form, "label"):
+          <legend>${form.label}</legend>
+        %endif
+        <div class="row">
+        <%standard_form:build_base_form form="${form}" values="${values}" errors="${errors}">
+            <button type="sumbit" class="btn btn-primary">${getattr(form, 'submit_label', 'Save & Proceed')}</button>
+            %if hasattr(form, 'cancel_route'):
+              <a href="${url(form.cancel_route)}" class="btn btn-default">${getattr(form, 'cancel_label', 'Cancel')}</a>
+            %endif
+        </%standard_form:build_base_form>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        %if hasattr(form, 'description'):
+            ${form.description}
+        %endif
+    </div>
+</%def>
+
+
+<%def name="extra_head()">${parent.extra_head()}${standard_form.css()}</%def>
+<%def name="post_scripts()">
+    <script type="text/javascript">
+      (function(a){if(window.filepicker){return}var b=a.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===a.location.protocol?"https:":"http:")+"//api.filepicker.io/v1/filepicker.js";var c=a.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);var d={};d._queue=[];var e="pick,pickMultiple,pickAndStore,read,write,writeUrl,export,convert,store,storeUrl,remove,stat,setKey,constructWidget,makeDropPane".split(",");var f=function(a,b){return function(){b.push([a,arguments])}};for(var g=0;g<e.length;g++){d[e[g]]=f(e[g],d._queue)}window.filepicker=d})(document);
+    </script>
+    <script>
+        filepicker.setKey('${settings.filepickerKey}');
+    </script>
+    ${standard_form.scripts()}
+</%def>

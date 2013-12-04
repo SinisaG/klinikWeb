@@ -1,2 +1,11 @@
+@content-min-width: 480px;
+@leftbar-width : 200px;
+@rightbar-width : 200px;
+@min-width: @content-min-width + @leftbar-width + @rightbar-width;
+@border-color: darken(@body-bg, 10%);
+
 @import "cachebuster";
 @import "../admin/bootstrap/bootstrap";
+@import "../admin/less/layout";
+@import "../admin/less/forms_ext";
+@import "../admin/less/forms";
