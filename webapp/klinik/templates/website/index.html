@@ -16,17 +16,10 @@
                     <div class="col-md-offset-2 col-md-8">
                         <div class="responsive-wrapper">
                             <div class="main-heading">
-                                Die Depression
+                                 ${_(u"Depression.Title")}
                             </div>
                             <div class="site-text">
-                                Sie sind nicht allein. In Deutschland leben über vier Millionen Menschen
-                                mit einer Depression. Schlaf- und Konzentrationsstörungen, ein Mangel an Antrieb sowie Schuldgefühle kommen dabei ebenso vor wie körperliche Beschwerden. Denn unser Körper findet noch Ausdrucksmöglichkeiten,
-                                wo die Sprache verstummt.
-                            </div>
-                            <div class="site-text margin-top-30">
-                                Die Depression ist eine Krankheit, die jeden treffen kann. Die gute Nachricht ist:
-                                Die Depression ist heilbar. Und dies gilt auch für schwere und chronische Verlaufsformen sowie für Verläufe,
-                                die von mangelndem Therapieansprechen gekennzeichnet sind.
+                                ${_(u"Depression.Text")|n}
                             </div>
                         </div>
                     </div>
@@ -34,7 +27,6 @@
                 <div class="row">
                     <div class="col-md-12 margin-top-100">
                             <img src="/static/img/depression.jpg" class="full-size"/>
-
                         </div>
                     </div>
                 </div>
@@ -52,24 +44,14 @@
                                          <div class="col-md-offset-2 col-md-8">
                                              <div class="responsive-wrapper">
                                                 <div class="main-heading">
-                                                    Die Klinik
+                                                    ${_(u"Klinik.Title")}
                                                 </div>
                                              <div class="site-text">
-                                                    Die Tagesklinik am Friesenplatz ist als private Fachklinik auf die Diagnostik und Behandlung der Depression spezialisiert. Weitere Schwerpunkte bilden Angst- und Zwangserkrankungen. Die Klinik funktioniert teilstationär,
-                                                    das heißt, Sie halten sich tagsüber in der Klinik auf und schlafen zuhause.
-                                                    Somit bekommen wir von Ihnen täglich ein Feedback, wie sich das Leben zuhause verändert.
-                                             </div>
-                                             <div class="site-text margin-top-40">
-                                                    Die Tagesklinik am Friesenplatz arbeitet nach dem zukunftsweisenden Konzept der personalisierten Therapie. Hierbei wird nach einer Phase intensiver Diagnostik die passende Therapie auf Sie als Patientin oder Patient zugeschnitten. Als Fachklinik können wir hierzu aus dem gesamten Spektrum körperlicher Therapieverfahren (inklusive transkranieller Magnetstimulation) auswählen.
-                                             </div>
-
-                                             <div class="site-text margin-top-40">
-                                                   Diese Verfahren gehen bei uns Hand in
-                                                    Hand mit Psychotherapieverfahren, welche sich bei der Depression als wirksam herausgestellt haben. Die sogenannten Komplementärtherapien runden das Therapiespektrum ab – hierzu zählen Kunst- und Körpertherapie, Ergo-, Musik- und Physiotherapie. Wir stellen Ihnen unser Therapieangebot auf den nächsten Seiten im Einzelnen vor.
+                                                    ${_(u"Klinik.Text")}
                                              </div>
                                              <div class="margin-top-40" id = "open-gallery">
                                                     <img src="/static/img/gallery.svg" class = "icon"/>
-                                                    <div class="icon-text">Galerie ansehen</div>
+                                                    <div class="icon-text">${_(u"Gallery.Open")}</div>
                                                     <div class ="margin-bottom-90" style="clear:both"></div>
                                              </div>
                                           </div>
@@ -87,7 +69,7 @@
                     <div class="col-md-offset-2 col-md-9">
                         <div class="responsive-wrapper">
                             <div class="main-heading">
-                                Wir kümmern uns um Sie
+                                ${_(u"About.Title")}
                             </div>
                          </div>
                      </div>
@@ -97,19 +79,19 @@
                          <div class="col-md-offset-3 col-md-7">
                              <div class="responsive-wrapper">
                                   <div class="name-text">
-                                      Dr. med. Christian Voß
+                                      ${_(u"About.Name")}
                                   </div>
                                   <div class="function-text">
-                                        Facharzt für Psychiatrie und Psychotherapie
-                                        <div class="function-text-regular">Leitender Arzt und Geschäftsführer</div>
+                                        ${_(u"About.Description.Bold")}
+                                        <div class="function-text-regular">${_(u"About.Description.Regular")}</div>
                                   </div>
                                  <div class="doctor-description ">
-                                     Temporemperum quo ma con nat perorupta sunderchil exernatus estes que volorio conserio ea doluptatem vollibusti qui dolum. Temporemperum quo ma con nat perorupta sunderchil exernatus estes que volorio conserio ea doluptatem vollibusti qui dolum.
+                                     ${_(u"About.Text")}
                                  </div>
                                   <div class="margin-top-40">
                                       <div id="trigger-video">
                                         <img src="/static/img/play_video.svg" class = "icon"/>
-                                        <div class="icon-text ">Video ansehen</div>
+                                        <div class="icon-text ">${_(u"Video.Open")}</div>
                                        </div>
                                         <div style="clear:both"></div>
                                    </div>
@@ -129,10 +111,10 @@
                                     <div class="row">
                                              <div class="col-md-offset-2 col-md-8 margin-bottom-100">
                                                     <div class="main-heading">
-                                                        Die Therapien
+                                                        ${_(u"Therapy.Title")}
                                                     </div>
                                                  <div class="site-text">
-                                                       Aus den folgenden Therapien stellen wir mit Ihnen gemeinsam die für Sie geeignete Behandlungza gegen die Depression zusammen:
+                                                      ${_(u"Therapy.Text")}
                                                  </div>
                                               </div>
                                          </div>
@@ -387,14 +369,14 @@
                              <div class="col-md-offset-2 col-md-8 padding-top-75">
                                  <div class="responsive-wrapper">
                                     <div class="main-heading">
-                                       Ihr Weg zu uns
+                                         ${_(u"Location.Title")}
                                     </div>
                                  <div class="site-text">
-                                       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                       ${_(u"Location.Text")}
                                  </div>
                                  <div class="margin-top-40">
                                         <a href ="https://maps.google.de/maps?saddr=current+location&daddr=Friesenstra%C3%9Fe%2072%E2%80%9374,%20Koeln,%20Germany" target="_blank"><img src="/static/img/directions.svg" class = "icon"/>
-                                        <div class="icon-text">Route berechnen</div> </a>
+                                        <div class="icon-text">${_(u"Route.Open")}</div> </a>
                                         <div class="margin-top-40"></div>
                                  </div>
                              </div>
@@ -424,16 +406,16 @@
                       <form class="${view.form.classes}" method="post" id="${view.form.id}">
                             ${forms.prelims(view.form)}
                           <div class="form-field">
-                           <input type="text" id = "contactForm.name" name ="contactForm.name" required placeholder="Name"/>
+                           <input type="text" id = "contactForm.name" name ="contactForm.name" required placeholder="${_(u'Form.Name')}"/>
                            </div>
                           <div class="form-field">
-                           <input type="email" id = "contactForm.email" name ="contactForm.email" required placeholder="E-Mail Addresse"/>
+                           <input type="email" id = "contactForm.email" name ="contactForm.email" required placeholder="${_(u'Form.Email')}"/>
                           </div>
                            <div class="form-field">
-                            <textarea type="text" id = "contactForm.message" name ="contactForm.message" required placeholder="Nachricht"></textarea>
+                            <textarea type="text" id = "contactForm.message" name ="contactForm.message" required placeholder="${_(u'Form.Content')}"></textarea>
                            </div>
                         <div class="form-actions">
-                            <button type="submit" class="btn">Absenden</button>
+                            <button type="submit" class="btn">${_(u'Form.Send')}</button>
                         </div>
                     </form>
                     </div>

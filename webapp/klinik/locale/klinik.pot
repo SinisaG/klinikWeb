@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klinik 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-12-04 16:18+0100\n"
+"POT-Creation-Date: 2013-12-04 19:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,5 +118,105 @@ msgstr ""
 
 #: klinik/templates/base.html:17
 msgid "Site.Header.Meta:Description"
+msgstr ""
+
+#: klinik/templates/website/index.html:19
+msgid "Depression.Title"
+msgstr ""
+
+#: klinik/templates/website/index.html:22
+msgid "Depression.Text"
+msgstr ""
+
+#: klinik/templates/website/index.html:47
+msgid "Klinik.Title"
+msgstr ""
+
+#: klinik/templates/website/index.html:50
+msgid "Klinik.Text"
+msgstr ""
+
+#: klinik/templates/website/index.html:54
+msgid "Gallery.Open"
+msgstr ""
+
+#: klinik/templates/website/index.html:72
+msgid "About.Title"
+msgstr ""
+
+#: klinik/templates/website/index.html:82
+msgid "About.Name"
+msgstr ""
+
+#: klinik/templates/website/index.html:85
+msgid "About.Description.Bold"
+msgstr ""
+
+#: klinik/templates/website/index.html:86
+msgid "About.Description.Regular"
+msgstr ""
+
+#: klinik/templates/website/index.html:89
+msgid "About.Text"
+msgstr ""
+
+#: klinik/templates/website/index.html:94
+msgid "Video.Open"
+msgstr ""
+
+#: klinik/templates/website/index.html:114
+msgid "Therapy.Title"
+msgstr ""
+
+#: klinik/templates/website/index.html:117
+msgid "Therapy.Text"
+msgstr ""
+
+#: klinik/templates/website/index.html:372
+msgid "Location.Title"
+msgstr ""
+
+#: klinik/templates/website/index.html:375
+msgid "Location.Text"
+msgstr ""
+
+#: klinik/templates/website/index.html:379
+msgid "Route.Open"
+msgstr ""
+
+#: klinik/templates/website/index.html:409
+msgid "Form.Name"
+msgstr ""
+
+#: klinik/templates/website/index.html:412
+msgid "Form.Email"
+msgstr ""
+
+#: klinik/templates/website/index.html:415
+msgid "Form.Content"
+msgstr ""
+
+#: klinik/templates/website/index.html:418
+msgid "Form.Send"
+msgstr ""
+
+#: klinik/templates/website/layout.html:33
+msgid "Menu.Depression"
+msgstr ""
+
+#: klinik/templates/website/layout.html:34
+msgid "Menu.Klinik"
+msgstr ""
+
+#: klinik/templates/website/layout.html:35
+msgid "Menu.Therapy"
+msgstr ""
+
+#: klinik/templates/website/layout.html:36
+msgid "Menu.Directions"
+msgstr ""
+
+#: klinik/templates/website/layout.html:37
+msgid "Menu.Impressum"
 msgstr ""
 

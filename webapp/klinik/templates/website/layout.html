@@ -30,11 +30,11 @@
                           </div>
                       </a>
                       <ul class="nav nav-pills pull-right">
-                          <li><a href="${ '#depression' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#depression' }" class="menu-item">Die Depression</a></li>
-                          <li><a href="${ '#clinic' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#clinic'}" class="menu-item">Die Klinik</a></li>
-                          <li><a href="${ '#therapy' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#therapy'}" class="menu-item">Die Therapien</a></li>
-                          <li><a href="${ '#where-we-are' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#where-we-are'}" class="menu-item">Ihr Weg zu uns</a></li>
-                          <li><a href="${request.fwd_url('website_impressum')}" class="menu-item">Impressum</a></li>
+                          <li><a href="${ '#depression' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#depression' }" class="menu-item">${_(u"Menu.Depression")}</a></li>
+                          <li><a href="${ '#clinic' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#clinic'}" class="menu-item">${_(u"Menu.Klinik")}</a></li>
+                          <li><a href="${ '#therapy' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#therapy'}" class="menu-item">${_(u"Menu.Therapy")}</a></li>
+                          <li><a href="${ '#where-we-are' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#where-we-are'}" class="menu-item">${_(u"Menu.Directions")}</a></li>
+                          <li><a href="${request.fwd_url('website_impressum')}" class="menu-item">${_(u"Menu.Impressum")}</a></li>
                         </ul>
                     </nav>
                 </div>
