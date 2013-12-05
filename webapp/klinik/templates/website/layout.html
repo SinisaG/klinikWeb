@@ -22,10 +22,10 @@
                           <img src="/static/img/logo.svg" alt="${g.project_name}" class="brand-image"/>
                           <div class="brand-text">
                                 <div class="brand-text-title">
-                                    Tagesklinik am Friesenplatz
+                                   ${_(u'Logo.Heading')}
                                 </div>
                                 <div class="brand-text-subtitle">
-                                    Teilstationäre Klinik für Psychiatrie und Psychotherapie <div class="brand-subtext">mit Ambulanz und Sachverständigenbüro</div>
+                                    ${_(u'Logo.SubtextBold')} <div class="brand-subtext"> ${_(u'Logo.SubtextNormal')}</div>
                                 </div>
                           </div>
                       </a>
@@ -59,20 +59,20 @@
                 <div class="row">
                     <div class="col-md-12  margin-top-20">
                         <div class="footer-item">
-                           <div class="footer-title">Tagesklinik am Friesenplatz GmbH </div>
-                           <div class="footer-text small-padding">Friesenstraße 72–74, 50670 Köln</div>
+                           <div class="footer-title"> ${_(u'Company.Name')} </div>
+                           <div class="footer-text small-padding"> ${_(u'Company.Address')}</div>
                         </div>
                          <div class="footer-item">
-                         <div class="footer-title">Telefon </div>
-                          <div class="footer-text small-padding">0176 63736189</div>
+                         <div class="footer-title"> ${_(u'Footer.Telephon')} </div>
+                          <div class="footer-text small-padding">${_(u'Company.Phone')}</div>
                         </div>
                          <div class="footer-item">
-                           <div class="footer-title">Fax </div>
-                           <div class="footer-text small-padding">0176 63736189</div>
+                           <div class="footer-title">${_(u'Footer.Fax')} </div>
+                           <div class="footer-text small-padding">${_(u'Company.Fax')}</div>
                         </div>
                          <div class="footer-item">
-                          <div class="footer-title"> Email </div>
-                           <div class="footer-text small-padding"><a href="mailto:info@tagesklinik-friesenplatz.de">info@tagesklinik-friesenplatz.de</a></div>
+                          <div class="footer-title"> ${_(u'Footer.Email')}</div>
+                           <div class="footer-text small-padding"><a href="mailto:${_(u'Company.Email')}">${_(u'Company.Email')}</a></div>
                         </div>
                     </div>
                 </div>
@@ -85,19 +85,19 @@
                 <div class="row">
                     <div class="col-md-12 margin-top-20">
                         <div class="footer-item">
-                           <a href="${ '#depression' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#depression' }"> <div class="footer-text">Die Depression</div></a>
+                           <a href="${ '#depression' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#depression' }"> <div class="footer-text">${_(u'Menu.Depression')}</div></a>
                         </div>
                         <div class="footer-item">
-                          <a href="${ '#clinic' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#clinic'}">  <div class="footer-text">Die Klinik</div> </a>
+                          <a href="${ '#clinic' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#clinic'}">  <div class="footer-text">${_(u'Menu.Klinik')}</div> </a>
                         </div>
                         <div class="footer-item">
-                            <a href="${ '#therapy' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#therapy'}">  <div class="footer-text">Die Therapien</div> </a>
+                            <a href="${ '#therapy' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#therapy'}">  <div class="footer-text">${_(u'Menu.Therapy')}</div> </a>
                         </div>
                          <div class="footer-item">
-                          <a href="${ '#where-we-are' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#where-we-are'}">  <div class="footer-text">Ihr Weg zu uns</div> </a>
+                          <a href="${ '#where-we-are' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#where-we-are'}">  <div class="footer-text">${_(u'Menu.Directions')}</div> </a>
                         </div>
                          <div class="footer-item">
-                          <a href="${request.fwd_url('website_impressum')}">  <div class="footer-text">Impressum</div> </a>
+                          <a href="${request.fwd_url('website_impressum')}">  <div class="footer-text">${_(u'Menu.Impressum')}</div> </a>
                         </div>
                      </div>
                 </div>
