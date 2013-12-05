@@ -1,5 +1,5 @@
 from hnc_forms_ext.controls import PictureUploadField
-from hnc.forms.formfields import BaseForm
+from klinik.common.lib.baseviews import BaseForm
 from hnc.forms.handlers import FormHandler
 from hnc.tools.request import JsonAwareRedirect
 from klinik.common.lib.html import admin_t

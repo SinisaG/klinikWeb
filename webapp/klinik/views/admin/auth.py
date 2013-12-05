@@ -1,9 +1,10 @@
-from hnc.forms.formfields import EmailField, REQUIRED, PasswordField, BaseForm
+from hnc.forms.formfields import EmailField, REQUIRED, PasswordField
 from hnc.forms.handlers import FormHandler
 from hnc.tools.request import JsonAwareRedirect
 from .__resources__ import AdminResource
 from klinik.common.lib.html import admin_t
 from klinik.views.admin.__resources__ import USER_TOKEN, AdminUserModel
+from klinik.common.lib.baseviews import BaseForm
 
 
 def add_views(config):

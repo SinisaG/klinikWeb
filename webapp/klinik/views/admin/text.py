@@ -1,10 +1,11 @@
 from  .__resources__ import AdminResource
 from klinik.common.lib.html import admin_t
-from hnc.forms.formfields import BaseForm, StringField, TextareaField
+from hnc.forms.formfields import  StringField, TextareaField
 from klinik.common.models.content import AddTextProc, DeleteTextProc, GetTextsProc, EditTextProc, GetTextProc
 from hnc.forms.handlers import FormHandler
 from hnc.tools.request import JsonAwareRedirect
 from pyramid.decorator import reify
+from klinik.common.lib.baseviews import BaseForm
 
 
 class TextResource(AdminResource):
