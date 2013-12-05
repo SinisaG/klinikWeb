@@ -32,7 +32,7 @@ class LoginForm(BaseForm):
     label = "Admin Login"
     submit_label = "Login"
     fields = [
-        EmailField("email", "Email", REQUIRED)
+        EmailField("email", "Email", REQUIRED, validator_args = {'resolve_domain': False})
         , PasswordField("pwd", "Password", REQUIRED)
     ]
     @classmethod

@@ -18,7 +18,7 @@
                                  ${_(u"Depression.Title")}
                             </div>
                             <div class="site-text">
-                                ${_(u"Depression.Text")|n}
+                                ${_(u"Depression.Text")| html.html, n }
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                                                     ${_(u"Klinik.Title")}
                                                 </div>
                                              <div class="site-text">
-                                                    ${_(u"Klinik.Text")}
+                                                    ${_(u"Klinik.Text")| html.html, n }
                                              </div>
                                              <div class="margin-top-40" id = "open-gallery">
                                                     <img src="/static/img/gallery.svg" class = "icon"/>
@@ -82,7 +82,7 @@
                                         <div class="function-text-regular">${_(u"About.Description.Regular")}</div>
                                   </div>
                                  <div class="doctor-description ">
-                                     ${_(u"About.Text")}
+                                     ${_(u"About.Text") | html.html, n}
                                  </div>
                                   <div class="margin-top-40">
                                       <div id="trigger-video">
@@ -110,7 +110,7 @@
                                                         ${_(u"Therapy.Title")}
                                                     </div>
                                                  <div class="site-text">
-                                                      ${_(u"Therapy.Text")}
+                                                      ${_(u"Therapy.Text")| html.html, n}
                                                  </div>
                                               </div>
                                          </div>
@@ -136,7 +136,7 @@
                                    ${texts[i].title}
                                  </div>
                                  <div class="text-information">
-                                   ${texts[i].body}
+                                   ${texts[i].body | html.html, n}
                                  </div>
                             %endif
                          %endfor
@@ -152,7 +152,7 @@
                                    ${texts[i].title}
                                  </div>
                                  <div class="text-information">
-                                   ${texts[i].body}
+                                   ${texts[i].body | html.html, n}
                                  </div>
                             %endif
                     %endfor
@@ -174,7 +174,7 @@
                                          ${_(u"Location.Title")}
                                     </div>
                                  <div class="site-text">
-                                       ${_(u"Location.Text")}
+                                       ${_(u"Location.Text") | html.html, n}
                                  </div>
                                  <div class="margin-top-40">
                                         <a href ="https://maps.google.de/maps?saddr=current+location&daddr=Friesenstra%C3%9Fe%2072%E2%80%9374,%20Koeln,%20Germany" target="_blank"><img src="/static/img/directions.svg" class = "icon"/>
