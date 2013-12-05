@@ -52,3 +52,7 @@ GetImagesProc = ClientTokenProc("/web/image/all", root_key="Images", result_cls=
 DeleteImageProc = ClientTokenProc("/web/image/delete")
 AddImageProc = ClientTokenProc("/web/image/add")
 GetTextsProc = ClientTokenProc("/web/text/all", root_key="Texts", result_cls=Text, result_list=True)
+AddTextProc = ClientTokenProc("/web/text/add")
+DeleteTextProc = ClientTokenProc("/web/text/delete")
+EditTextProc = ClientTokenProc("/web/text/edit")
+GetTextProc = ClientTokenProc("/web/text", root_key="Text", result_cls=Text)

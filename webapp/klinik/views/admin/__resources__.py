@@ -23,7 +23,8 @@ class AdminResource(AdminUserMixin, RootResource):
 
     main_menu = [
          MenuEntry("admin_content_list", "Static Content"),
-        MenuEntry("admin_image_list", "Images")
+         MenuEntry("admin_image_list", "Images"),
+         MenuEntry("admin_text_list", "Text")
     ]
 
     @property
