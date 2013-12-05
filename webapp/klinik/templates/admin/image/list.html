@@ -1,0 +1,28 @@
+<%inherit file="../layout.html"/>
+
+<%def name="bcrumbs()"></%def>
+
+<%def name="content()">
+    <div class="padded-body">
+        <div class="row">
+            <div class="col-lg-12">
+                <a href="${url("admin_image_create")}" class="btn btn-primary pull-right">Setup new Picture</a>
+                <h3>All Pictures</h3>
+                <div class="list-group">
+                    <div class="row list-group-item list-group-header">
+                        <div class="col-lg-2">picture</div>
+                    </div>
+                    <div class="row list-group-item">
+                       %for i in range(0,len(images)):
+                        <div>
+                        <a href = "${images[i].url}"><img src="${images[i].url}" style="width:300px"/></a>
+                        <a href="${request.ajax_url("admin_image_delete")}?id=${images[i].id}" onclick="confirm('really?')" class="btn btn-danger edit-link">delete</a>
+                        </div>
+                        %endfor
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</%def>

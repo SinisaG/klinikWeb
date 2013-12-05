@@ -22,7 +22,8 @@ class AdminResource(AdminUserMixin, RootResource):
     site_title = ['Admin Site']
 
     main_menu = [
-         MenuEntry("admin_content_list", "Static Content")
+         MenuEntry("admin_content_list", "Static Content"),
+        MenuEntry("admin_image_list", "Images")
     ]
 
     @property

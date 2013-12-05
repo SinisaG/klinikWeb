@@ -1,7 +1,7 @@
 from .__resources__ import AdminResource
 from klinik.common.lib.baseviews import EMPTY_VIEW
 from klinik.common.lib.html import admin_t
-from klinik.views.admin import auth, content, api
+from klinik.views.admin import auth, content, api, image
 
 
 class AdminSettings(object):
@@ -30,6 +30,7 @@ def add_views(config):
     auth.add_views(config)
     content.add_views(config)
     api.add_views(config)
+    image.add_views(config)
 
 
 def add_routes(config):
@@ -42,6 +43,10 @@ def add_routes(config):
 
     config.add_route("admin_api_content"            , "/api/content"            , factory=api.AdminApiResource)
     config.add_route("admin_api_activecontent"      , "/api/activecontent"      , factory=api.AdminApiResource)
+
+    config.add_route("admin_image_list"            , "/image"                 , factory=AdminResource)
+    config.add_route("admin_image_create"          , "/image/create"          , factory=AdminResource)
+    config.add_route("admin_image_delete"          , "/image/delete"          , factory=AdminResource)
 
 def includeme(config):
     add_settings(config)
