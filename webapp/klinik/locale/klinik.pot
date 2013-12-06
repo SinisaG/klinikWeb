@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klinik 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-12-05 17:25+0100\n"
+"POT-Creation-Date: 2013-12-06 15:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,67 @@ msgstr ""
 
 #: klinik/templates/base.html:17
 msgid "Site.Header.Meta:Description"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:8
+#: klinik/templates/website/layout.html:63
+msgid "Company.Address"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:9
+#: klinik/templates/website/layout.html:67
+msgid "Company.Phone"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:10
+#: klinik/templates/website/layout.html:71
+msgid "Company.Fax"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:11
+#: klinik/templates/website/layout.html:75
+msgid "Company.Email"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:12
+msgid "Company.Website"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:14
+#: klinik/templates/website/layout.html:62
+msgid "Company.Name"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:15
+msgid "Company.Court"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:16
+msgid "Company.Number"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:17
+msgid "Company.Description"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:18
+msgid "Company.Owner"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:19
+msgid "Company.OwnerDescription"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:20
+msgid "Company.Banking"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:21
+msgid "Company.BLZKonto"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:22
+msgid "Company.BICIBAN"
 msgstr ""
 
 #: klinik/templates/website/index.html:18
@@ -137,35 +198,15 @@ msgstr ""
 msgid "Menu.Impressum"
 msgstr ""
 
-#: klinik/templates/website/layout.html:62
-msgid "Company.Name"
-msgstr ""
-
-#: klinik/templates/website/layout.html:63
-msgid "Company.Address"
-msgstr ""
-
 #: klinik/templates/website/layout.html:66
 msgid "Footer.Telephon"
-msgstr ""
-
-#: klinik/templates/website/layout.html:67
-msgid "Company.Phone"
 msgstr ""
 
 #: klinik/templates/website/layout.html:70
 msgid "Footer.Fax"
 msgstr ""
 
-#: klinik/templates/website/layout.html:71
-msgid "Company.Fax"
-msgstr ""
-
 #: klinik/templates/website/layout.html:74
 msgid "Footer.Email"
-msgstr ""
-
-#: klinik/templates/website/layout.html:75
-msgid "Company.Email"
 msgstr ""
 
