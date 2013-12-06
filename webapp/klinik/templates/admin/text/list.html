@@ -15,12 +15,11 @@
                     <div class="row list-group-item">
                        %for i in range(0,len(texts)):
                         <div style="height:75px;">
-                        <div style="margin-right: 20px; display:inline-block;font-size: 20px; color:blue; ">${texts[i].title}</div>
+                        <div style="margin-right: 20px; display:inline-block;font-size: 20px; color:#003797; ">${texts[i].title}</div><br>
                         <a href="${request.ajax_url("admin_text_delete")}?id=${texts[i].id}" onclick="confirm('really?')" class="btn btn-danger edit-link">delete</a>
                         <a href="${request.ajax_url("admin_text_edit")}?id=${texts[i].id}" class="btn btn-primary edit-link">edit</a>
                         </div>
                         %endfor
-
                     </div>
                 </div>
             </div>
