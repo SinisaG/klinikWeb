@@ -1,14 +1,14 @@
 # Translations template for klinik.
-# Copyright (C) 2013 ORGANIZATION
+# Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the klinik project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: klinik 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-12-06 15:27+0100\n"
+"POT-Creation-Date: 2014-01-06 10:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,34 +55,38 @@ msgid "Company.Name"
 msgstr ""
 
 #: klinik/templates/website/impressum.html:15
-msgid "Company.Court"
+msgid "Company.Headquarter"
 msgstr ""
 
 #: klinik/templates/website/impressum.html:16
-msgid "Company.Number"
+msgid "Company.Court"
 msgstr ""
 
 #: klinik/templates/website/impressum.html:17
-msgid "Company.Description"
+msgid "Company.Number"
 msgstr ""
 
 #: klinik/templates/website/impressum.html:18
-msgid "Company.Owner"
+msgid "Company.Description"
 msgstr ""
 
 #: klinik/templates/website/impressum.html:19
-msgid "Company.OwnerDescription"
+msgid "Company.Owner"
 msgstr ""
 
 #: klinik/templates/website/impressum.html:20
-msgid "Company.Banking"
+msgid "Company.OwnerDescription"
 msgstr ""
 
 #: klinik/templates/website/impressum.html:21
-msgid "Company.BLZKonto"
+msgid "Company.Banking"
 msgstr ""
 
 #: klinik/templates/website/impressum.html:22
+msgid "Company.BLZKonto"
+msgstr ""
+
+#: klinik/templates/website/impressum.html:23
 msgid "Company.BICIBAN"
 msgstr ""
 

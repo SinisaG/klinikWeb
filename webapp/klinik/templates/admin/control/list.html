@@ -1,0 +1,36 @@
+<%inherit file="../layout.html"/>
+
+<%def name="bcrumbs()"></%def>
+
+<%def name="content()">
+    <div class="padded-body">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Control Sections</h3>
+                <div class="list-group">
+                    <div class="row list-group-item list-group-header">
+                        <div class="col-lg-2">Sections</div>
+                    </div>
+                    <div class="row list-group-item">
+                       %for i in range(0,len(controls)):
+                        <div style="height:75px;">
+                         %if controls[i].value:
+                            <div style="margin-left: 15px; display:inline-block;font-size: 20px; color:#003797; margin-right: 100px; ">${controls[i].name}</div>
+                         %else:
+                            <div style="margin-left: 15px; display:inline-block;font-size: 20px; color:red; margin-right: 100px; ">${controls[i].name}</div>
+                         %endif
+                         <a href="${request.ajax_url("admin_control_edit")}?name=${controls[i].name}" class="btn btn-primary edit-link">edit</a>
+                        </div>
+                        %endfor
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</%def>
+
+<%def name="post_scripts()">
+
+
+
+</%def>
