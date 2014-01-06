@@ -128,10 +128,9 @@
          <div class="padding-top-75"></div>
         <div class="container">
             <div class="row">
-                 <div class="col-md-5 padding-bottom-160">
+                 <div class="col-md-5 padding-bottom-160-text">
                      <div class="responsive-wrapper">
-                         %for i in range (0, len(texts)):
-                            %if i%2 == 0:
+                         %for i in range (0, len(texts)/2):
                                 <div class="blue-line"></div>
                                  <div class="text-title">
                                    ${texts[i].title}
@@ -139,15 +138,13 @@
                                  <div class="text-information">
                                    ${texts[i].body | html.html, n}
                                  </div>
-                            %endif
                          %endfor
                       </div>
                 </div>
                 <div class="col-md-offset-2 col-md-5 padding-bottom-160">
                                      <!-- -------------------------------------------------------------- -->
                   <div class="responsive-wrapper">
-                   %for i in range (0, len(texts)):
-                            %if i%2 != 0:
+                   %for i in range (len(texts)/2, len(texts)):
                                 <div class="blue-line"></div>
                                  <div class="text-title">
                                    ${texts[i].title}
@@ -155,7 +152,6 @@
                                  <div class="text-information">
                                    ${texts[i].body | html.html, n}
                                  </div>
-                            %endif
                     %endfor
                 </div>
               </div>
