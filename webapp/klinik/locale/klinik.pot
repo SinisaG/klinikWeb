@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klinik 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-06 10:54+0100\n"
+"POT-Creation-Date: 2014-01-06 15:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,83 +90,83 @@ msgstr ""
 msgid "Company.BICIBAN"
 msgstr ""
 
-#: klinik/templates/website/index.html:18
+#: klinik/templates/website/index.html:16
 msgid "Depression.Title"
 msgstr ""
 
-#: klinik/templates/website/index.html:21
+#: klinik/templates/website/index.html:19
 msgid "Depression.Text"
 msgstr ""
 
-#: klinik/templates/website/index.html:43
+#: klinik/templates/website/index.html:41
 msgid "Klinik.Title"
 msgstr ""
 
-#: klinik/templates/website/index.html:46
+#: klinik/templates/website/index.html:44
 msgid "Klinik.Text"
 msgstr ""
 
-#: klinik/templates/website/index.html:50
+#: klinik/templates/website/index.html:48
 msgid "Gallery.Open"
 msgstr ""
 
-#: klinik/templates/website/index.html:68
+#: klinik/templates/website/index.html:66
 msgid "About.Title"
 msgstr ""
 
-#: klinik/templates/website/index.html:78
+#: klinik/templates/website/index.html:77
 msgid "About.Name"
 msgstr ""
 
-#: klinik/templates/website/index.html:81
+#: klinik/templates/website/index.html:80
 msgid "About.Description.Bold"
 msgstr ""
 
-#: klinik/templates/website/index.html:82
+#: klinik/templates/website/index.html:81
 msgid "About.Description.Regular"
 msgstr ""
 
-#: klinik/templates/website/index.html:85
+#: klinik/templates/website/index.html:84
 msgid "About.Text"
 msgstr ""
 
-#: klinik/templates/website/index.html:90
+#: klinik/templates/website/index.html:89
 msgid "Video.Open"
 msgstr ""
 
-#: klinik/templates/website/index.html:110
+#: klinik/templates/website/index.html:111
 msgid "Therapy.Title"
 msgstr ""
 
-#: klinik/templates/website/index.html:113
+#: klinik/templates/website/index.html:114
 msgid "Therapy.Text"
 msgstr ""
 
-#: klinik/templates/website/index.html:174
+#: klinik/templates/website/index.html:175
 msgid "Location.Title"
 msgstr ""
 
-#: klinik/templates/website/index.html:177
+#: klinik/templates/website/index.html:178
 msgid "Location.Text"
 msgstr ""
 
-#: klinik/templates/website/index.html:181
+#: klinik/templates/website/index.html:182
 msgid "Route.Open"
 msgstr ""
 
-#: klinik/templates/website/index.html:211
+#: klinik/templates/website/index.html:212
 msgid "Form.Name"
 msgstr ""
 
-#: klinik/templates/website/index.html:214
+#: klinik/templates/website/index.html:215
 msgid "Form.Email"
 msgstr ""
 
-#: klinik/templates/website/index.html:217
+#: klinik/templates/website/index.html:218
 msgid "Form.Content"
 msgstr ""
 
-#: klinik/templates/website/index.html:220
+#: klinik/templates/website/index.html:221
 msgid "Form.Send"
 msgstr ""
 
