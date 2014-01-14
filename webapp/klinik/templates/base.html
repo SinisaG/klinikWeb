@@ -17,7 +17,8 @@
     <meta itemprop="description" content="${_('Site.Header.Meta:Description')}">
 
     ${self.seo_tags()}
-    <link rel="stylesheet" type="text/css" href="${STATIC_URL}fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="${STATIC_URL}fonts/fonts.css?${VERSION_TOKEN}">
+    <link rel="shortcut icon" href="/static/img/favicon.ico?${VERSION_TOKEN}" />
     ${self.extra_head()}
     %if g.is_debug:
         <script type="text/javascript">less = { env: 'development' };</script>
