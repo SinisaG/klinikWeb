@@ -19,4 +19,4 @@ class index(FormHandler):
         return Control.value
 
 def empty(context, request):
-    return {'title':u'Tagesklinik am Friesenplatz Köln | Impressum', 'description':u'Tagesklinik am Friesenplatz, Friesenstraße 72–74, 50670 Köln. Telefon: 0221 120 62 44-2. Fax: 0221 120 62 44-3. Email: info@tages-klinikfriesenplatz.de'}
+    return {'title':u'Tagesklinik am Friesenplatz Köln | Impressum', 'description':u'Tagesklinik am Friesenplatz, Friesenstraße 72–74, 50670 Köln. Telefon: 0221 120 62 44-2. Fax: 0221 120 62 44-3. Email: info@tagesklinik-friesenplatz.de'}
