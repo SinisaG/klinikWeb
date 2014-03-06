@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html lang="en" ${self.html_tags()}> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    %if ${title}:
+    %if not 'admin' in request.url:
         <title>${title}</title>
     %endif
     <meta name="viewport" content="width=device-width">
@@ -55,7 +55,7 @@
   <%def name="styles_live()"></%def>
   <%def name="styles_debug()"></%def>
   <%def name="seo_tags()">
-    %if ${description}:
+    %if not 'admin' in request.url:
         <meta name="description" content="${description}"/>
     %endif
   </%def>
