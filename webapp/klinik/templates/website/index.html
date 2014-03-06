@@ -3,18 +3,18 @@
 
 <%def name="content()">
         <div class="cover-image position-relative">
-            <img src="/static/img/circle_1.svg" class="circle-1 circle" data-stellar-ratio="2" >
+            <img alt="Depression heilen." src="/static/img/circle_1.svg" class="circle-1 circle" data-stellar-ratio="2" >
          </div>
 
         <div id="depression" class="gray-background position-relative">
-            <img src="/static/img/circle_3.svg" class="circle-3 circle" data-stellar-ratio="2"/>
+            <img src="/static/img/circle_3.svg" alt="Vier Millionen Menschen in Deutschlandleiden an der Depression." class="circle-3 circle" data-stellar-ratio="2"/>
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8">
                         <div class="responsive-wrapper">
-                            <div class="main-heading">
+                            <h2 class="main-heading">
                                  ${_(u"Depression.Title")}
-                            </div>
+                            </h2>
                             <div class="site-text">
                                 ${_(u"Depression.Text")| html.html, n }
                             </div>
@@ -23,13 +23,13 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 margin-top-100">
-                            <img src="/static/img/depression.jpg" class="full-size"/>
+                            <img alt="Depressive Person" src="/static/img/depression.jpg" class="full-size"/>
                         </div>
                     </div>
                 </div>
             </div>
-        <div id="clinic" class="section-clinic position-relative">
-            <img src="/static/img/circle_4.svg" data-stellar-ratio="2"  class="circle circle-4"/>
+        <div id="klinik" class="section-clinic position-relative">
+            <img src="/static/img/circle_4.svg" alt="Schwerpunkte: Depression, Angst und Zwang" data-stellar-ratio="2"  class="circle circle-4"/>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -37,9 +37,9 @@
                                 <div class="row">
                                          <div class="col-md-offset-2 col-md-8">
                                              <div class="responsive-wrapper">
-                                                <div class="main-heading">
+                                                <h2 class="main-heading">
                                                     ${_(u"Klinik.Title")}
-                                                </div>
+                                                </h2>
                                              <div class="site-text">
                                                     ${_(u"Klinik.Text")| html.html, n }
                                              </div>
@@ -99,7 +99,7 @@
         </div>
          </div>
         %endif
-        <div id="therapy" class="therapy-section">
+        <div id="therapien" class="therapy-section">
             <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -107,9 +107,9 @@
                                  <div class="responsive-wrapper">
                                     <div class="row">
                                              <div class="col-md-offset-2 col-md-8 margin-bottom-100">
-                                                    <div class="main-heading">
+                                                    <h2 class="main-heading">
                                                         ${_(u"Therapy.Title")}
-                                                    </div>
+                                                    </h2>
                                                  <div class="site-text">
                                                       ${_(u"Therapy.Text")| html.html, n}
                                                  </div>
@@ -132,9 +132,9 @@
                      <div class="responsive-wrapper">
                          %for i in range (0, len(texts)/2):
                                 <div class="blue-line"></div>
-                                 <div class="text-title">
+                                 <h3 class="text-title">
                                    ${texts[i].title}
-                                 </div>
+                                 </h3>
                                  <div class="text-information">
                                    ${texts[i].body | html.html, n}
                                  </div>
@@ -146,9 +146,9 @@
                   <div class="responsive-wrapper">
                    %for i in range (len(texts)/2, len(texts)):
                                 <div class="blue-line"></div>
-                                 <div class="text-title">
+                                 <h3 class="text-title">
                                    ${texts[i].title}
-                                 </div>
+                                 </h3>
                                  <div class="text-information">
                                    ${texts[i].body | html.html, n}
                                  </div>
@@ -159,7 +159,7 @@
         </div>
     </div>
     <div class="small-line-divider"></div>
-     <div id="where-we-are" class="where-we-at position-relative">
+     <div id="anfahrt" class="where-we-at position-relative">
          <div class="container">
              <div class="row">
                  <div class="col-md-12">
@@ -167,9 +167,9 @@
                          <div class="row">
                              <div class="col-md-offset-2 col-md-8 padding-top-75">
                                  <div class="responsive-wrapper">
-                                    <div class="main-heading">
+                                    <h2 class="main-heading">
                                          ${_(u"Location.Title")}
-                                    </div>
+                                    </h2>
                                  <div class="site-text">
                                        ${_(u"Location.Text") | html.html, n}
                                  </div>
@@ -198,9 +198,9 @@
           <div class="container">
               <div class="row">
                <div class="col-md-8 col-md-offset-2">
-                   <div class=" main-heading">
+                   <h2 class=" main-heading">
                        Kontakt
-                   </div>
+                   </h2>
                     <div class="contact-holder margin-top-40">
                       <form class="${view.form.classes}" method="post" id="${view.form.id}">
                             ${forms.prelims(view.form)}

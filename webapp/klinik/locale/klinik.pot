@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klinik 0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-06 15:00+0100\n"
+"POT-Creation-Date: 2014-03-06 17:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,31 +17,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: klinik/templates/base.html:16
-msgid "Site.Header.Meta:Name"
-msgstr ""
-
-#: klinik/templates/base.html:17
-msgid "Site.Header.Meta:Description"
-msgstr ""
-
 #: klinik/templates/website/impressum.html:8
-#: klinik/templates/website/layout.html:63
 msgid "Company.Address"
 msgstr ""
 
 #: klinik/templates/website/impressum.html:9
-#: klinik/templates/website/layout.html:67
+#: klinik/templates/website/layout.html:73
 msgid "Company.Phone"
 msgstr ""
 
 #: klinik/templates/website/impressum.html:10
-#: klinik/templates/website/layout.html:71
+#: klinik/templates/website/layout.html:77
 msgid "Company.Fax"
 msgstr ""
 
 #: klinik/templates/website/impressum.html:11
-#: klinik/templates/website/layout.html:75
+#: klinik/templates/website/layout.html:81
 msgid "Company.Email"
 msgstr ""
 
@@ -50,7 +41,6 @@ msgid "Company.Website"
 msgstr ""
 
 #: klinik/templates/website/impressum.html:14
-#: klinik/templates/website/layout.html:62
 msgid "Company.Name"
 msgstr ""
 
@@ -142,75 +132,95 @@ msgstr ""
 msgid "Therapy.Text"
 msgstr ""
 
-#: klinik/templates/website/index.html:175
+#: klinik/templates/website/index.html:171
 msgid "Location.Title"
 msgstr ""
 
-#: klinik/templates/website/index.html:178
+#: klinik/templates/website/index.html:174
 msgid "Location.Text"
 msgstr ""
 
-#: klinik/templates/website/index.html:182
+#: klinik/templates/website/index.html:178
 msgid "Route.Open"
 msgstr ""
 
-#: klinik/templates/website/index.html:212
+#: klinik/templates/website/index.html:208
 msgid "Form.Name"
 msgstr ""
 
-#: klinik/templates/website/index.html:215
+#: klinik/templates/website/index.html:211
 msgid "Form.Email"
 msgstr ""
 
-#: klinik/templates/website/index.html:218
+#: klinik/templates/website/index.html:214
 msgid "Form.Content"
 msgstr ""
 
-#: klinik/templates/website/index.html:221
+#: klinik/templates/website/index.html:217
 msgid "Form.Send"
 msgstr ""
 
-#: klinik/templates/website/layout.html:25
+#: klinik/templates/website/layout.html:27
 msgid "Logo.Heading"
 msgstr ""
 
-#: klinik/templates/website/layout.html:28
+#: klinik/templates/website/layout.html:30
 msgid "Logo.SubtextBold"
 msgstr ""
 
-#: klinik/templates/website/layout.html:28
+#: klinik/templates/website/layout.html:30
 msgid "Logo.SubtextNormal"
 msgstr ""
 
-#: klinik/templates/website/layout.html:33 klinik/templates/website/layout.html:88
+#: klinik/templates/website/layout.html:35 klinik/templates/website/layout.html:95
 msgid "Menu.Depression"
 msgstr ""
 
-#: klinik/templates/website/layout.html:34 klinik/templates/website/layout.html:91
+#: klinik/templates/website/layout.html:36 klinik/templates/website/layout.html:98
 msgid "Menu.Klinik"
 msgstr ""
 
-#: klinik/templates/website/layout.html:35 klinik/templates/website/layout.html:94
+#: klinik/templates/website/layout.html:37 klinik/templates/website/layout.html:101
 msgid "Menu.Therapy"
 msgstr ""
 
-#: klinik/templates/website/layout.html:36 klinik/templates/website/layout.html:97
+#: klinik/templates/website/layout.html:38 klinik/templates/website/layout.html:104
 msgid "Menu.Directions"
 msgstr ""
 
-#: klinik/templates/website/layout.html:37 klinik/templates/website/layout.html:100
+#: klinik/templates/website/layout.html:39 klinik/templates/website/layout.html:107
 msgid "Menu.Impressum"
 msgstr ""
 
-#: klinik/templates/website/layout.html:66
+#: klinik/templates/website/layout.html:65
+msgid "Footer.PureName"
+msgstr ""
+
+#: klinik/templates/website/layout.html:65
+msgid "Footer.GmbH"
+msgstr ""
+
+#: klinik/templates/website/layout.html:67
+msgid "Footer.PureAddress"
+msgstr ""
+
+#: klinik/templates/website/layout.html:68
+msgid "Footer.PurePost"
+msgstr ""
+
+#: klinik/templates/website/layout.html:68
+msgid "Footer.PureCity"
+msgstr ""
+
+#: klinik/templates/website/layout.html:72
 msgid "Footer.Telephon"
 msgstr ""
 
-#: klinik/templates/website/layout.html:70
+#: klinik/templates/website/layout.html:76
 msgid "Footer.Fax"
 msgstr ""
 
-#: klinik/templates/website/layout.html:74
+#: klinik/templates/website/layout.html:80
 msgid "Footer.Email"
 msgstr ""
 

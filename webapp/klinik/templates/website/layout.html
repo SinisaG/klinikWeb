@@ -19,11 +19,13 @@
                 <div class="col-md-12">
                     <nav class="navbar navbar-default" role="navigation">
                       <a class="navbar-brand" href="${request.fwd_url('website_home')}">
-                          <img src="/static/img/logo.svg" alt="${g.project_name}" class="brand-image"/>
+                          <div itemscope itemtype="http://schema.org/Organization">
+                            <img src="/static/img/logo.svg" alt="Logo" class="brand-image"/>
+                          </div>
                           <div class="brand-text">
-                                <div class="brand-text-title">
+                                <h1 class="brand-text-title">
                                    ${_(u'Logo.Heading')}
-                                </div>
+                                </h1>
                                 <div class="brand-text-subtitle">
                                     ${_(u'Logo.SubtextBold')} <div class="brand-subtext"> ${_(u'Logo.SubtextNormal')}</div>
                                 </div>
@@ -58,22 +60,27 @@
                     </div>
                 <div class="row">
                     <div class="col-md-12  margin-top-20">
-                        <div class="footer-item">
-                           <div class="footer-title"> ${_(u'Company.Name')} </div>
-                           <div class="footer-text small-padding"> ${_(u'Company.Address')}</div>
-                        </div>
-                         <div class="footer-item">
-                         <div class="footer-title"> ${_(u'Footer.Telephon')} </div>
-                          <div class="footer-text small-padding">${_(u'Company.Phone')}</div>
-                        </div>
-                         <div class="footer-item">
-                           <div class="footer-title">${_(u'Footer.Fax')} </div>
-                           <div class="footer-text small-padding">${_(u'Company.Fax')}</div>
-                        </div>
-                         <div class="footer-item">
-                          <div class="footer-title"> ${_(u'Footer.Email')}</div>
-                           <div class="footer-text small-padding"><a href="mailto:${_(u'Company.Email')}">${_(u'Company.Email')}</a></div>
-                        </div>
+                        <div itemscope itemtype="<http://schema.org/localbusiness>">
+                            <div class="footer-item">
+                               <div class="footer-title"> <span itemprop="name">${_(u'Footer.PureName')}</span> <span>${_(u'Footer.GmbH')}</span> </div>
+                               <div class="footer-text small-padding" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                                    <span itemprop="streetAddress">${_(u'Footer.PureAddress')}</span>,
+                                    <span itemprop="postalCode">${_(u'Footer.PurePost')}</span> <span itemprop="addressLocality">${_(u'Footer.PureCity')}</span>
+                               </div>
+                            </div>
+                             <div class="footer-item">
+                             <div class="footer-title"> ${_(u'Footer.Telephon')} </div>
+                              <div class="footer-text small-padding" itemprop="telephone">${_(u'Company.Phone')}</div>
+                            </div>
+                             <div class="footer-item">
+                               <div class="footer-title">${_(u'Footer.Fax')} </div>
+                               <div class="footer-text small-padding" itemprop="faxNumber">${_(u'Company.Fax')}</div>
+                            </div>
+                             <div class="footer-item">
+                              <div class="footer-title"> ${_(u'Footer.Email')}</div>
+                               <div class="footer-text small-padding"><a href="mailto:${_(u'Company.Email')}" itemprop="email">${_(u'Company.Email')}</a></div>
+                            </div>
+                         </div>
                     </div>
                 </div>
              <div style="clear:both"></div>
