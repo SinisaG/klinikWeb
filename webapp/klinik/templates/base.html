@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     %if not 'admin' in request.url:
         <title>${title}</title>
+        <meta name="description" content="${description}"/>
     %endif
     <meta name="viewport" content="width=device-width">
     <meta name="MobileOptimized" content="width">
@@ -54,11 +55,7 @@
   <%def name="subtitle()"></%def>
   <%def name="styles_live()"></%def>
   <%def name="styles_debug()"></%def>
-  <%def name="seo_tags()">
-    %if not 'admin' in request.url:
-        <meta name="description" content="${description}"/>
-    %endif
-  </%def>
+  <%def name="seo_tags()">  </%def>
   <%def name="extra_head()"></%def>
 <%def name="body_class()"></%def>
 <%def name="page_class()"></%def>
