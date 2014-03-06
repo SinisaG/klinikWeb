@@ -1,4 +1,4 @@
-from operator import attrgetter
+# -*- coding: utf-8 -*-
 from hnc.forms.handlers import FormHandler
 from klinik.common.models.content import GetImagesProc, GetTextsProc, GetControlProc
 from klinik.views.website.forms import ContactForm
