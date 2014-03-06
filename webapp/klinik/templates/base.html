@@ -5,7 +5,9 @@
 <!--[if gt IE 8]><!--> <html lang="en" ${self.html_tags()}> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>${title}</title>
+    %if ${title}:
+        <title>${title}</title>
+    %endif
     <meta name="viewport" content="width=device-width">
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
@@ -53,7 +55,9 @@
   <%def name="styles_live()"></%def>
   <%def name="styles_debug()"></%def>
   <%def name="seo_tags()">
-    <meta name="description" content="${description}"/>
+    %if ${description}:
+        <meta name="description" content="${description}"/>
+    %endif
   </%def>
   <%def name="extra_head()"></%def>
 <%def name="body_class()"></%def>
