@@ -10,8 +10,8 @@ class index(FormHandler):
     def add_globals(self, request, result):
         result['images'] = GetImagesProc(request)
         result['texts'] = GetTextsProc(request)
-        result['title'] = 'Tagesklinik am Friesenplatz Köln'
-        result['description'] = 'Die Tagesklinik am Friesenplatz ist als private Fachklinik mit zehn Behandlungsplätzen auf die Diagnostik und Behandlung der Depression spezialisiert.'
+        result['title'] = u'Tagesklinik am Friesenplatz Köln'
+        result['description'] = u'Die Tagesklinik am Friesenplatz ist als private Fachklinik mit zehn Behandlungsplätzen auf die Diagnostik und Behandlung der Depression spezialisiert.'
         return result
 
     def display(self, request, value):
@@ -19,4 +19,4 @@ class index(FormHandler):
         return Control.value
 
 def empty(context, request):
-    return {'title':'Tagesklinik am Friesenplatz Köln | Impressum', 'description':'Tagesklinik am Friesenplatz, Friesenstraße 72–74, 50670 Köln. Telefon: 0221 120 62 44-2. Fax: 0221 120 62 44-3. Email: info@tagesklinikfriesenplatz.de'}
+    return {'title':u'Tagesklinik am Friesenplatz Köln | Impressum', 'description':u'Tagesklinik am Friesenplatz, Friesenstraße 72–74, 50670 Köln. Telefon: 0221 120 62 44-2. Fax: 0221 120 62 44-3. Email: info@tagesklinikfriesenplatz.de'}
