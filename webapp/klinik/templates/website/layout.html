@@ -33,9 +33,9 @@
                       </a>
                       <ul class="nav nav-pills pull-right">
                           <li><a href="${ '#depression' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#depression' }" class="menu-item">${_(u"Menu.Depression")}</a></li>
-                          <li><a href="${ '#clinic' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#klinik'}" class="menu-item">${_(u"Menu.Klinik")}</a></li>
-                          <li><a href="${ '#therapy' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#therapien'}" class="menu-item">${_(u"Menu.Therapy")}</a></li>
-                          <li><a href="${ '#where-we-are' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#anfahrt'}" class="menu-item">${_(u"Menu.Directions")}</a></li>
+                          <li><a href="${ '#klinik' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#klinik'}" class="menu-item">${_(u"Menu.Klinik")}</a></li>
+                          <li><a href="${ '#therapien' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#therapien'}" class="menu-item">${_(u"Menu.Therapy")}</a></li>
+                          <li><a href="${ '#anfahrt' if request.matched_route.name == 'website_home' else request.fwd_url('website_home') + '#anfahrt'}" class="menu-item">${_(u"Menu.Directions")}</a></li>
                           <li><a href="${request.fwd_url('website_impressum')}" class="menu-item">${_(u"Menu.Impressum")}</a></li>
                         </ul>
                     </nav>
