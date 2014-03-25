@@ -265,6 +265,8 @@
 <%def name="post_scripts()">
 <script>
 
+if(document.all && document.compatMode) $('.logo-image').removeClass('pull-left');
+
 if(window.innerWidth > 992) $(window).stellar({responsive: true});
 
 var $root = $('html, body');
