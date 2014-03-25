@@ -265,7 +265,10 @@
 <%def name="post_scripts()">
 <script>
 
-if(document.all && document.compatMode) $('.logo-image').removeClass('pull-left');
+var isIE11 = '-ms-scroll-limit' in document.documentElement.style && '-ms-ime-align' in document.documentElement.style;
+var isIE = document.all && document.compatMode;
+
+if(isIE11 || isIE) $('.logo-image').removeClass('pull-left');
 
 if(window.innerWidth > 992) $(window).stellar();
 
