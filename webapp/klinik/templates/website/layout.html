@@ -20,15 +20,15 @@
                     <nav class="navbar navbar-default" role="navigation">
                       <a class="navbar-brand" href="${request.fwd_url('website_home')}">
                           <div class="pull-left" itemscope itemtype="http://schema.org/Organization">
-                            <img src="/static/img/logo.svg" alt="Logo" class="brand-image"/>
+                            <img itemprop="logo" src="/static/img/logo.svg" alt="Logo" class="brand-image"/>
                           </div>
                           <div class="brand-text">
                                 <h1 class="brand-text-title">
                                    ${_(u'Logo.Heading')}
                                 </h1>
-                                <div class="brand-text-subtitle">
+                                <h2 class="brand-text-subtitle">
                                     ${_(u'Logo.SubtextBold')} <div class="brand-subtext"> ${_(u'Logo.SubtextNormal')}</div>
-                                </div>
+                                </h2>
                           </div>
                       </a>
                       <ul class="nav nav-pills pull-right">
