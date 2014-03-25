@@ -265,7 +265,7 @@
 <%def name="post_scripts()">
 <script>
 
-if(window.innerWidth > 992) $(window).stellar();
+if(window.innerWidth > 992) $(window).stellar({responsive: true});
 
 var $root = $('html, body');
 $('a').click(function() {
